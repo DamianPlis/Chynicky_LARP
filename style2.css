@@ -50,8 +50,8 @@ nav {
 
 .side-menu {
     position: fixed;  
-    right: -150px;
-    width: 150px;
+    right: -15%;
+    width: 15%;
     height: 100%;
     background-color: slategrey;
     transition: right 0.3s;
