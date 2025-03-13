@@ -31,7 +31,7 @@ p{
 
 }
 
-.ozveny-stinu2 {
+.ozveny-stinu2, .ozveny-stinu2-navrat, .ozveny-stinu2-coming-soon  {
     display: flex;
     width: 100%;
 }
