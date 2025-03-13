@@ -42,9 +42,9 @@
    const device = getDevice(); // Call function and store result
    
    if (device.includes ("iPhone")) {  
-       window.location.href = "../O nas/O nás.html"
+       window.location.href = "index-mobil.html"
    } else if (device.includes ("Android")) {
-       window.location.href = "../O nas/O nás.html"
+       window.location.href = "index-mobil.html"
    }
    // Example usage
    console.log("Detected Device:", device);
