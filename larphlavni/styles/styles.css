@@ -72,8 +72,18 @@ p{
     }
 }
 */
-    
 
+@media only screen and (min-width: 500px) {
+    .kalendar-akci {
+    grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .kalendar-akci {
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+}
 .ozveny2-popis {
     flex: 1;
     display: flex;
@@ -173,7 +183,7 @@ nav {
 .side-menu {
     position: fixed;  
     right: -250px;
-    width: 250px;
+    width: 150px;
     height: 100%;
     background-color: rgb(112, 128, 144);
     transition: right 0.3s;
