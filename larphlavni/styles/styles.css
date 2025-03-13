@@ -175,7 +175,7 @@ nav {
     right: -250px;
     width: 250px;
     height: 100%;
-    background-color: rgb(198, 200, 202);
+    background-color: rgb(112, 128, 144);
     transition: right 0.3s;
     flex-direction: column;
     z-index: 5;
