@@ -39,13 +39,22 @@
        return device;
    }
    
-   const device = getDevice(); // Call function and store result
+   const device = getDevice(); // Call function and 
    
-   if (device.includes ("iPhone")) {  
-       window.location.href = "index-mobil.html"
-   } else if (device.includes ("Android")) {
-       window.location.href = "index-mobil.html"
-   }
+   
+    if (device.includes("iPhone") || device.includes("Android")) {  
+        // Get the current page URL
+        let currentPage = window.location.pathname; // Example: "/index.html"
+
+        // Check if the page has ".html" at the end
+        if (currentPage.endsWith(".html")) {
+            let mobilePage = currentPage.replace(".html", "-mobil.html"); // Replace ".html" with "-mobile.html"
+            window.location.href = mobilePage; // Redirect
+        }
+    }
+
+   
+   
    // Example usage
    console.log("Detected Device:", device);
    })()
