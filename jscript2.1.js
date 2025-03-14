@@ -41,11 +41,13 @@
    
    const device = getDevice(); // Call function and store result
 
-   if (device.includes ("Windows")) {  
-       window.location.href = "index.html"
-   } else if (device.includes ("Mac")) {
-       window.location.href = "index.html"
-   }
+   
+       if (device.includes("Wnidows") || device.includes("Mac")) {  
+        // Get the current page URL
+        let currentPage = window.location.pathname; // Example: "/index.html"
+         window.location.href = currentPage
+
+   
    // Example usage
    console.log("Detected Device:", device);
    })()
