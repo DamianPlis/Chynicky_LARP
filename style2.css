@@ -188,3 +188,9 @@ a{
     margin-right: 10%;
     margin-left: 10%;
 }
+/**/
+/**/
+.organizatori {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
