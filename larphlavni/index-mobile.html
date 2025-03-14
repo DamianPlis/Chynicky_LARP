@@ -1,1 +1,130 @@
+<!DOCTYPE html>
+<html lang="cz">
 
+<head>
+    <script src="jscript2.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shorcut icon" href="favicon.svg">
+    <title>Kalendář akcí</title>
+    <link rel=" stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="pravo">
+
+            <div class="menu" onclick="toggleMenu()">
+                <img class="menu-btn" src="img/tri mece final final.png" height="100" alt="Menu">
+            </div>
+        </div>
+        <div class="center">
+            <div class="ozveny">
+                <h1 class="nadpis">LARP</h1>
+            </div>
+            <h4 class="nadpis">
+                Organizujeme malé LARPové akce
+            </h4>
+        </div>
+
+        <div class="side-menu" id="sideMenu">
+            <a href="index.html" onclick="toggleMenu()">Kalendář akcí</a>
+            <a href="../O nas/O nás.html" onclick="toggleMenu()">O nás</a>
+            <a href="../pribehy/pribehy.html" onclick="toggleMenu()">Příběhy</a>
+        </div>
+    </nav>
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <div class="kalendar-akci">
+        <p class="kalendar-nazev">Kalendář akcí</p>
+        <div class="kalendar-akci2">
+            <div class="ozveny-stinu2">
+                <div class="ozveny2-popis">
+                    <a href="../Ozveny stinu2/Ozvěny stínů 2.html">
+                        <button class="ozveny-stinu-tlacitko">Ozvěny Stínů 2</button>
+                    </a>
+                    <div class="datumy">
+                        <p class="datum-right">Datum :</p>
+                        <p class="datum-left">26.4.2025 až</p>
+                        <p class="datum-left">27.4.2025</p>
+                    </div>
+                    <div class="organizator">
+                        <p style="display: inline-block; flex: 1;">Organizátoři :</p>
+                        <p style="display: inline-block; flex: 1;">Kvido Redl</p>
+                        <p style="display: inline-block; flex: 1;" s>Hugo Redl</p>
+                        <p style="display: inline-block; flex: 1;" s>Kristián Páca</p>
+                    </div>
+                </div>
+                <div class="ozveny2-img">
+                    <img style="width: 100%; justify-content: center; margin: 5px 0 5px 0;" src="img/ozveny2IL.jpg">
+                </div>
+            </div>
+            <div class="ozveny-stinu2-navrat">
+                <div class="ozveny2-popis">
+                    <a href="#">
+                        <button class="ozveny-stinu-tlacitko">Návrat mocného</button>
+                    </a>
+                    <div class="datumy">
+                        <div style="margin: 0 0 10px 0;">
+                            <p class="datum-right">Datum :</p>
+                            <p class="datum-left2">Není určen</p>
+                        </div>
+                        <div class="moznost">
+                            <p class="datum-left">1. Možnost 14.6.2025 - </p>
+                            <p class="datum-left3">15.6.2025</p>
+                        </div>
+                        <div class="moznost">
+                            <p class="datum-left">2. Možnost 21.6.2025 - </p>
+                            <p class="datum-left3">22.6.2025</p>
+                        </div>
+                    </div>
+                    <div class="organizator">
+                        <p style="display: inline-block; flex: 1;">Organizátoři :</p>
+                        <p style="display: inline-block; flex: 1;">Kvido Redl</p>
+                        <p style="display: inline-block; flex: 1;" s>Hugo Redl</p>
+                        <p style="display: inline-block; flex: 1;" s>Kristián Páca</p>
+                    </div>
+                </div>
+                <div class="ozveny2-img">
+                    <img style="width: 100%; justify-content: center; margin: 5px 0 5px 0;" src="img/Výstřižek.PNG">
+                </div>
+            </div>
+            <!---->
+            <!---->
+            <div class="ozveny-stinu2-coming-soon">
+                <div class="ozveny2-popis">
+                    <a href="#">
+                        <button class="ozveny-stinu-tlacitko">Již brzy</button>
+                    </a>
+                    <div class="datumy">
+                        <p class="datum-right">Datum :</p>
+                        <p class="datum-left">Již brzy</p>
+                        <p class="datum-left"></p>
+                    </div>
+                    <div class="organizator">
+                        <p style="display: inline-block; flex: 1;">Organizátoři :</p>
+                        <p style="display: inline-block; flex: 1;">Již brzy</p>
+                        <p style="display: inline-block; flex: 1;"></p>
+                        <p style="display: inline-block; flex: 1;"></p>
+                    </div>
+                </div>
+                <div class="ozveny2-img">
+                    <img style=" width: 100%; justify-content: center; margin: 5px 0 5px 0;"
+                        src="img/questionmark2.2.png">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+    <script src="../jscript.js"></script>
+</body>
+
+</html>
