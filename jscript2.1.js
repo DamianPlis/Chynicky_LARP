@@ -44,8 +44,9 @@
    
        if (device.includes("Wnidows") || device.includes("Mac")) {  
         // Get the current page URL
-        let currentPage = window.location.pathname; // Example: "/index.html"
-         window.location.href = currentPage
+        let currentPage = window.location.href; // Example: "/index.html"
+         correctPage = currentPage.replace ("-mobil.html", ".html")
+         window.location.href = correctPage
 
    
    // Example usage
