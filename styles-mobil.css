@@ -195,6 +195,12 @@ a{
     margin: 5px 15px 5px 15px;
 }
 
+.organizatori h2, .cepka h2 {
+    font-size: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .organizatori {
     display: flex;
     flex-direction: column;
@@ -213,6 +219,11 @@ a{
 .cepka2{
     display: grid;
     grid-template-columns: 1fr;
+}
+@media only screen and (min-width:600px){
+    .foto-mobil{
+        width: 50%;
+    };
 }
 
 .foto-mobil{
