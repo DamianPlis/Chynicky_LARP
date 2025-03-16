@@ -40,12 +40,15 @@
    }
    
    const device = getDevice(); // Call function and store result
+
    
-   if (device.includes ("iPhone")) {  
-       window.location.href = "../O nas/O nás.html"
-   } else if (device.includes ("Android")) {
-       window.location.href = "../O nas/O nás.html"
-   }
+       if (device.includes("Wnidows") || device.includes("Mac")) {  
+        // Get the current page URL
+        let currentPage = window.location.pathname; // Example: "/index.html"
+         correctPage = currentPage.replace ("-mobil.html", ".html");
+         window.location.href = correctPage;
+      }
+   
    // Example usage
    console.log("Detected Device:", device);
    })()

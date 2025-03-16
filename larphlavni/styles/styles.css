@@ -1,3 +1,4 @@
+
 p{
     margin: 0;
 }
@@ -7,10 +8,15 @@ p{
     font-size: 30px;
 }
 
-.kalendar-akci {
+.kalendar-akci2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     font-family: "Roboto";
+    margin-top: 30px;
+}
+
+.kalendar-akci {
+    margin-top: 60px;
 }
 
 .ozveny-stinu-tlacitko {
@@ -34,6 +40,7 @@ p{
 .ozveny-stinu2, .ozveny-stinu2-navrat, .ozveny-stinu2-coming-soon  {
     display: flex;
     width: 100%;
+    margin-bottom: 30px
 }
 
 .organizator {
@@ -73,7 +80,7 @@ p{
 }
 */
 
-@media only screen and (min-width: 500px) {
+@media only screen and (max-width: 500px) {
     .kalendar-akci {
     grid-template-columns: 1fr;
     }
@@ -141,7 +148,7 @@ body {
     width: 100%;
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
-    padding-top: 100px;
+    padding-top: 115px;
 }
 
 /* Navigační menu */
@@ -154,7 +161,7 @@ nav {
     margin-top: 0px;
     top: 0;
     left: 0;
-
+    background-image: url(../../kvido\ html-img/foto/Nav.panel/temný\ les\ 3.jpg);
 }
 
 /* poloha */

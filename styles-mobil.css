@@ -189,8 +189,44 @@ a{
     margin-left: 10%;
 }
 /**/
-/**/
-.organizatori {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+/*pro o nas*/
+
+.organizatori2, .cepka2 {
+    margin: 5px 15px 5px 15px;
 }
+
+.organizatori {
+    display: flex;
+    flex-direction: column;
+}
+
+.organizatori2 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.cepka{
+    display: flex;
+    flex-direction: column;
+}
+
+.cepka2{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.foto-mobil{
+    width: 60%;
+}
+/*
+@media only screen and (max-width: 450px) {
+    .cepka2{
+        display: grid;
+        grid-template-columns: 1fr;
+    } 
+    .organizatori2 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+*/
