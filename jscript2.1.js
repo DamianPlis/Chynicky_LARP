@@ -34,7 +34,10 @@
            device = "Apple Mac";
        } else if (/Windows/.test(uzivatel)) {
            device = "Windows PC";
-       }
+       } else if (/CrOS/.test(uzivatel)) { // Detect Chrome OS
+            device = "Chrome OS";
+       } else if (/Linux/.test(uzivatel) && !/Android/.test(uzivatel)) { // Detect Linux but exclude Android
+            device = "Linux PC"; 
    
        return device;
    }
@@ -42,13 +45,16 @@
    const device = getDevice(); // Call function and store result
 
    
-       if (device.includes("Windows") || device.includes("Mac")) {  
+       if (device.includes("Windows") || device.includes("Mac") || device.includes("Chrome") || device.includes("Linux")) {  
         // Get the current page URL
         let currentPage = window.location.pathname; // Example: "/index.html"
          let correctPage = currentPage.replace ("-mobil.html", ".html");
          window.location.href = correctPage;
+         console.log("current page: ",currentPage)
+         console.log("redirect :",correctPage
       }
    
    // Example usage
    console.log("Detected Device:", device);
+   console.log("device: ",uzivatel)
    })()
