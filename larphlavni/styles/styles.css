@@ -22,7 +22,7 @@ p{
 .ozveny-stinu-tlacitko {
     background-color: rgb(10, 10, 10);
     color: white;
-    border: none;
+    border: 2px solid rgb(86, 86, 86);
     border-radius: 2px;
     padding: 5px 30px 5px 30px;
     transition: background-color 0.15s;
@@ -31,7 +31,7 @@ p{
 }
 
 .ozveny-stinu-tlacitko:hover {
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(86, 86, 86);
     color: white;
     border: none;
 
