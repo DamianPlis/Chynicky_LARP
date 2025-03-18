@@ -249,7 +249,7 @@ a{
 
 /* pro os2*/
 
-.info {
+.info, .info2-1, .info2-2 {
     grid-template-columns: 1fr;
 }
 .ico{
