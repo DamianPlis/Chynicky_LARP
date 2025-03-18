@@ -41,6 +41,7 @@
    
        return device;
    }
+}
    
    const device = getDevice(); // Call function and 
    
@@ -54,7 +55,7 @@
         if (currentPage.endsWith(".html")) {
             let mobilePage = currentPage.replace(".html", "-mobil.html"); // Replace ".html" with "-mobile.html"
             window.location.href = mobilePage; // Redirect
-            console.log("redirect:",mobilePage;
+            console.log("redirect:",mobilePage);
         }
     }
 

@@ -41,6 +41,7 @@
    
        return device;
    }
+}
    
    const device = getDevice(); // Call function and store result
 
@@ -50,8 +51,8 @@
         let currentPage = window.location.pathname; // Example: "/index.html"
          let correctPage = currentPage.replace ("-mobil.html", ".html");
          window.location.href = correctPage;
-         console.log("current page: ",currentPage)
-         console.log("redirect :",correctPage
+         console.log("current page: ",currentPage);
+         console.log("redirect :",correctPage);
       }
    
    // Example usage
