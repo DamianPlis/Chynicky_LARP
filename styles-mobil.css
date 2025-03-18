@@ -14,11 +14,11 @@ nav {
     width: 100%;
     background-image: url("kvido\ html-img/foto/Nav.panel/temný\ les\ 3.jpg");
     padding: 1rem;
-    height: 83px;
     z-index: 5;
     margin-top: 0px;
     top: 0;
     left: 0;
+    text-align: left;
 
 }
 
@@ -33,6 +33,7 @@ nav {
 .nadpis{
     text-align: left;
     margin-left: 20px;
+    margin-bottom: 5px;
 }
 
 /* menu */

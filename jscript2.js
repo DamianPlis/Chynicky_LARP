@@ -2,6 +2,7 @@
     function getDevice() {
        const uzivatel = navigator.userAgent
        let device = "neznamy uzivatel"
+       console.log("User Agent info:", uzivatel);
    
    
        if (/iPhone/.test(uzivatel)) {
@@ -38,10 +39,10 @@
             device = "Chrome OS";
        } else if (/Linux/.test(uzivatel) && !/Android/.test(uzivatel)) { // Detect Linux but exclude Android
             device = "Linux PC"; 
-   
+       }
        return device;
    }
-}
+
    
    const device = getDevice(); // Call function and 
    
@@ -63,5 +64,4 @@
    
    // Example usage
    console.log("Detected Device:", device);
-   console.log("device=", uzivatel);
    })()
