@@ -247,3 +247,27 @@ a{
         height: auto;
     }
 }
+
+/*pro os2*/
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin: 7px 15px 7px 15px;
+}
+
+@media only screen and (min-width: 1300px) {
+    .info {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .info {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .info {
+        grid-template-columns: 1fr;
+    }
+}
