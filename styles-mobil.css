@@ -30,6 +30,11 @@ nav {
     z-index: 10;
 }
 
+.nadpis{
+    text-align: left;
+    margin-left: 20px;
+}
+
 /* menu */
 .menu {
     width: 70px;
@@ -241,3 +246,12 @@ a{
     }
 }
 */
+
+/* pro os2*/
+
+.info {
+    grid-template-columns: 1fr;
+}
+.ico{
+    width: 30%;
+}
