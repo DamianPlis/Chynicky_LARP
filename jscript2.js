@@ -34,7 +34,10 @@
            device = "Apple Mac";
        } else if (/Windows/.test(uzivatel)) {
            device = "Windows PC";
-       }
+       } else if (/CrOS/.test(uzivatel)) { // Detect Chrome OS
+            device = "Chrome OS";
+       } else if (/Linux/.test(uzivatel) && !/Android/.test(uzivatel)) { // Detect Linux but exclude Android
+            device = "Linux PC"; 
    
        return device;
    }
@@ -44,12 +47,14 @@
    
     if (device.includes("iPhone") || device.includes("Android")) {  
         // Get the current page URL
-        let currentPage = window.location.pathname; // Example: "/index.html"
+        let currentPage = window.location.pathname // Example: "/index.html"
+        console.log("current page:",currentPage)
 
         // Check if the page has ".html" at the end
         if (currentPage.endsWith(".html")) {
             let mobilePage = currentPage.replace(".html", "-mobil.html"); // Replace ".html" with "-mobile.html"
             window.location.href = mobilePage; // Redirect
+            console.log("redirect:",mobilePage;
         }
     }
 
@@ -57,4 +62,5 @@
    
    // Example usage
    console.log("Detected Device:", device);
+   console.log("device=", uzivatel);
    })()
