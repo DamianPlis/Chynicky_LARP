@@ -276,4 +276,8 @@ a{
     }
 }
 
-
+.icons h1{
+    flex: 1;
+    padding: 10xp;
+    text-align: center;
+}
