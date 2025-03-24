@@ -4,11 +4,8 @@ const uzivatel = navigator.userAgent;
         const uzivatel = navigator.userAgent;
         let device = "neznamy uzivatel";
         if (/iPhone/.test(uzivatel)) {
-             getIOSVersion();
-             if (match2) {
-                device = `Apple iPhone iOS (match)` 
-             }  else 
-             device = "Apple iPhone"    
+            const iosVersion = getIOSVersion();
+            device = `Apple iPhone (iOS ${iosVersion})`;
         } else if (/Android/.test(uzivatel)) {
             // Jednodušší detekce pro Android
             let match = uzivatel.match(/\((.*?)\)/);
