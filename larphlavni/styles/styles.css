@@ -33,7 +33,7 @@ p{
 .ozveny-stinu-tlacitko:hover {
     background-color: rgb(86, 86, 86);
     color: white;
-    border: none;
+    border-color: rgb(86, 86, 86);
 
 }
 
