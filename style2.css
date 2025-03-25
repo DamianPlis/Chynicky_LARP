@@ -49,7 +49,7 @@ nav {
 
 .side-menu {
     position: fixed;  
-    right: -100px;
+    right: -150px;
     width: 150px;
     height: 100%;
     background-color: slategrey;
