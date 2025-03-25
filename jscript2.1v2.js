@@ -2,6 +2,7 @@
     function TypUzivatele() {
         const uzivatel = navigator.userAgent;
         let device = "neznamy uzivatel";
+        console.log(uzivatel)
 
         if (/iPhone/.test(uzivatel)) {
             const iosVersion = getIOSVersion();
