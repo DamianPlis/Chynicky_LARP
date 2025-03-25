@@ -10,11 +10,11 @@
             let match = uzivatel.match(/\((.*?)\)/);
             device = match ? `Android Device (${match[1]})` : "Android Device";
         } else if (/Macintosh/.test(uzivatel) && !/iPhone/.test(uzivatel)) {
-            device = "Apple Mac";
+            device = "Apple Mac PC";
         } else if (/Windows/.test(uzivatel)) {
             device = "Windows PC";
         } else if (/CrOS/.test(uzivatel)) {
-            device = "Chrome OS";
+            device = "Chrome OS PC";
         } else if (/Linux/.test(uzivatel) && !/Android/.test(uzivatel)) {
             device = "Linux PC"; 
         }
@@ -29,7 +29,7 @@
 
     const device = TypUzivatele();
 
-    if (device.includes("iPhone") || device.includes("Android")) {
+    if (device.includes("PC") {
         let currentPage = window.location.pathname;
         let correctPage = currentPage.replace(".html", "-mobil.html");
 
