@@ -15,3 +15,19 @@ function updatePadding() {
 // Run on page load & window resize
 window.addEventListener("load", updatePadding);
 window.addEventListener("resize", updatePadding);
+
+function easterEgg (){
+    alert("orb orb orb orb, orb orb orb orb orb! Gratuluji, nasel jsi easter egg")
+}
+
+const delayTime = 1000 * 60 * 20
+// nastavi cas ukazani
+const startTime = Date.now()
+
+const checkTime = setInterval(() => {
+    const elapsedTime = Date.now - startTime
+    if (elapsedTime >= delayTime){
+        clearInterval();
+        easterEgg();
+    };
+})
