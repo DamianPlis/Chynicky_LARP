@@ -16,18 +16,34 @@ function updatePadding() {
 window.addEventListener("load", updatePadding);
 window.addEventListener("resize", updatePadding);
 
-function easterEgg (){
-    alert("orb orb orb orb, orb orb orb orb orb! Gratuluji, nasel jsi easter egg")
+
+
+let activeTime = 0; // Track time spent actively on the page
+let lastActiveTime = Date.now();
+const delayTime = 15 * 60 * 1000; // 10 minutes
+
+// Function to update active time
+function updateActiveTime() {
+    if (!document.hidden) {
+        activeTime += Date.now() - lastActiveTime;
+    }
+    lastActiveTime = Date.now();
 }
 
-const delayTime = 1000 * 60 * 20
-// nastavi cas ukazani
-const startTime = Date.now()
-
+// Check every second if the user has reached the required time
 const checkTime = setInterval(() => {
-    const elapsedTime = Date.now - startTime
-    if (elapsedTime >= delayTime){
-        clearInterval();
-        easterEgg();
-    };
-})
+    updateActiveTime();
+    if (activeTime >= delayTime) {
+        clearInterval(checkTime); // Stop checking
+        activateEasterEgg();
+    }
+}, 1000);
+
+// Detect when user switches tabs or returns
+document.addEventListener("visibilitychange", updateActiveTime);
+
+// Easter Egg function
+function activateEasterEgg() {
+    alert("ORB ORB ORB ORB, ORB ORB ORB ORB ORB Gratuluji nasel jso easterEgg!");
+    // You can replace this with animations, sounds, or secret messages
+}
