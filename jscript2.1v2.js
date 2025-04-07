@@ -30,7 +30,7 @@
 
     const device = TypUzivatele();
 
-    if (device.includes("PC") {
+    if (device.includes("PC")) {
         let currentPage = window.location.pathname;
         let correctPage = currentPage.replace(".html", "-mobil.html");
 
