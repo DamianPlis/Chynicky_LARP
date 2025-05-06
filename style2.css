@@ -281,3 +281,10 @@ a{
     padding: 10xp;
     text-align: center;
 }
+/*pro navrat*/
+
+.prihlasit {
+    cursor: not-allowed; /* This shows the "stop" icon */
+    pointer-events: none; /* Prevents clicks */
+    opacity: 0.6; 
+}

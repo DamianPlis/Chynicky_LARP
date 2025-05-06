@@ -37,12 +37,19 @@ p{
     width: 100%;
 }
 
-.organizator {
+.organizatori-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+.organizatori-text {
+    display: inline-block;
+    flex: 1;
+}
+
+
 /*
 @media only screen and (min-width: 1500px) {
     .ozveny-stinu2 {
@@ -191,6 +198,27 @@ nav {
 
 .center {
     text-align: center;
+}
+
+.menu-item-s-submenu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.ma-submenu {
+    cursor: pointer;
+}
+
+.submenu {
+    display: none;
+    flex-direction: column;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.menu-item-s-submenu:hover .submenu {
+    display: flex;
 }
 
 /* Styl pro odkazy v menu */
