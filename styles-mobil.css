@@ -75,6 +75,27 @@ nav {
     text-align: center;
 }
 
+.menu-item-s-submenu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.ma-submenu {
+    cursor: pointer;
+}
+
+.submenu {
+    display: none;
+    flex-direction: column;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.menu-item-s-submenu.open .submenu {
+    display: flex;
+}
+
 /* Styl pro odkazy v menu */
 .side-menu a {
     color: white;

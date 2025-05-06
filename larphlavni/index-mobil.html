@@ -2,12 +2,12 @@
 <html lang="cz">
 
 <head>
-    <script src="../responzivni-pro-mobilV2.js"></script>
+    <script src="../responzivni-pro-pocitacV2.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shorcut icon" href="favicon.svg">
     <title>Kalendář akcí</title>
-    <link rel=" stylesheet" href="styles/styles-mobil.css">
+    <link rel=" stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
@@ -32,7 +32,13 @@
         </div>
 
         <div class="side-menu" id="sideMenu">
-            <a href="index.html" onclick="toggleMenu()">Kalendář akcí</a>
+            <div class="menu-item-s-submenu">
+                <a href="#" class="ma-submenu" onclick="toggleMenu()">Kalendář akcí</a>
+                <div class="submenu">
+                    <a href="../Ozveny stinu2/Ozvěny stínů 2.html" onclick="toggleMenu()">Ozvěny stínu 2 (už proběhlo)</a>
+                    <a href="../Navrat-mocneho/Navrat-mocneho.html" onclick="toggleMenu()">Návrat mocného</a>
+                </div>
+            </div>
             <a href="../O nas/O nás.html" onclick="toggleMenu()">O nás</a>
             <a href="../pribehy/pribehy.html" onclick="toggleMenu()">Příběhy</a>
         </div>
@@ -54,11 +60,11 @@
                         <p class="datum-left">26.4.2025 až</p>
                         <p class="datum-left">27.4.2025</p>
                     </div>
-                    <div class="organizator">
-                        <p style="display: inline-block; flex: 1;">Organizátoři :</p>
-                        <p style="display: inline-block; flex: 1;">Kvido Redl</p>
-                        <p style="display: inline-block; flex: 1;" s>Hugo Redl</p>
-                        <p style="display: inline-block; flex: 1;" s>Kristian Páca</p>
+                    <div class="organizatori-div">
+                        <p class="organizatori-text">Organizátoři :</p>
+                        <p class="organizatori-text">Kvido Redl</p>
+                        <p class="organizatori-text" s>Hugo Redl</p>
+                        <p class="organizatori-text" s>Kristian Páca</p>
                     </div>
                 </div>
                 <div class="ozveny2-img">
@@ -67,7 +73,7 @@
             </div>
             <div class="ozveny-stinu2-navrat">
                 <div class="ozveny2-popis">
-                    <a href="#">
+                    <a href="../Navrat-mocneho/Navrat-mocneho.html">
                         <button class="ozveny-stinu-tlacitko">Návrat mocného</button>
                     </a>
                     <div class="datumy">
@@ -84,11 +90,11 @@
                             <p class="datum-left3">22.6.2025</p>
                         </div>
                     </div>
-                    <div class="organizator">
-                        <p style="display: inline-block; flex: 1;">Organizátoři :</p>
-                        <p style="display: inline-block; flex: 1;">Kvido Redl</p>
-                        <p style="display: inline-block; flex: 1;" s>Hugo Redl</p>
-                        <p style="display: inline-block; flex: 1;" s>Kristian Páca</p>
+                    <div class="organizatori">
+                        <p class="organizatori-text">Organizátoři :</p>
+                        <p class="organizatori-text">Kvido Redl</p>
+                        <p class="organizatori-text" s>Hugo Redl</p>
+                        <p class="organizatori-text" s>Kristian Páca</p>
                     </div>
                 </div>
                 <div class="ozveny2-img">
@@ -107,11 +113,11 @@
                         <p class="datum-left">Již brzy</p>
                         <p class="datum-left"></p>
                     </div>
-                    <div class="organizator">
-                        <p style="display: inline-block; flex: 1;">Organizátoři :</p>
-                        <p style="display: inline-block; flex: 1;">Již brzy</p>
-                        <p style="display: inline-block; flex: 1;"></p>
-                        <p style="display: inline-block; flex: 1;"></p>
+                    <div class="organizatori-div">
+                        <p class="organizatori-text">Organizátoři :</p>
+                        <p class="organizatori-text">Již brzy</p>
+                        <p class="organizatori-text"></p>
+                        <p class="organizatori-text"></p>
                     </div>
                 </div>
                 <div class="ozveny2-img">

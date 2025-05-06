@@ -1,11 +1,52 @@
+// pro side menu
 function toggleMenu() {
+    let mobileOrNot;
     const sideMenu = document.getElementById("sideMenu");
     const menuButton = document.querySelector(".menu");
 
     sideMenu.classList.toggle("side-menu-open");
     menuButton.classList.toggle("menu-open");
+
+    // Add or remove the outside click listener depending on menu state
+    if (sideMenu.classList.contains("side-menu-open")) {
+        document.addEventListener("click", menuOutsideClick);
+    } else {
+        document.removeEventListener("click", menuOutsideClick);
+    }
+    //pokud mobile tak var na jiny kod
+    if (JSON.parse(localStorage.getItem(mobileOrNot)).mobileOrNot === false) {
+        mobileOrNot = false
+        console.log(mobileOrNot)
+    } else {
+        mobileOrNot = true
+        console.log(mobileOrNot)
+    }
+    /* */
+    if (mobileOrNot = true) {
+        // Click-to-toggle submenu
+        document.addEventListener("DOMContentLoaded", () => {
+            const submenuToggle = document.querySelector(".ma-submenu");
+            const menuItem = document.querySelector(".menu-item-s-submenu");
+
+            submenuToggle.addEventListener("click", (event) => {
+                event.preventDefault(); // Prevent jumping if href="#"
+                menuItem.classList.toggle("open");
+            });
+        });
+    }
+    function menuOutsideClick(event) {
+        if (!sideMenu.contains(event.target) && !menuButton.contains(event.target)) {
+            // Clicked outside the menu and button, so close the menu
+            sideMenu.classList.remove("side-menu-open");
+            menuButton.classList.remove("menu-open");
+            document.removeEventListener("click", menuOutsideClick);
+        }
+    }
 }
 
+/* */
+
+// pro nav bar
 function updatePadding() {
     const nav = document.querySelector("nav");
     const content = document.querySelector("body"); // Adjust selector for your page content
@@ -16,7 +57,10 @@ function updatePadding() {
 window.addEventListener("load", updatePadding);
 window.addEventListener("resize", updatePadding);
 
+/* */
 
+
+// pro easter egg
 
 let activeTime = 0; // Track time spent actively on the page
 let lastActiveTime = Date.now();
@@ -47,3 +91,5 @@ function activateEasterEgg() {
     alert("ORB ORB ORB ORB, ORB ORB ORB ORB ORB Gratuluji nasel jso easterEgg!");
     // You can replace this with animations, sounds, or secret messages
 }
+
+/* */
