@@ -1,4 +1,7 @@
 (function () {
+    let mobileOrNot = {
+        mobileOrNot:"false",
+    }
     function TypUzivatele() {
         const uzivatel = navigator.userAgent;
         let device = "neznamy uzivatel";
@@ -33,6 +36,7 @@
     if (device.includes("iPhone") || device.includes("Android")) {
         let currentPage = window.location.pathname;
         let correctPage = currentPage.replace(".html", "-mobil.html");
+        mobileOrNot.mobileOrNot = true;
 
         if (currentPage !== correctPage) {
             console.log("Current page:", currentPage);
@@ -40,6 +44,6 @@
             window.location.href = correctPage;
         }
     }
-
+    localStorage.setItem(JSON.stringify(mobileOrNot))
     console.log("Detected Device:", device);
 })();

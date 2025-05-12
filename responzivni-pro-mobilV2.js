@@ -32,7 +32,7 @@
 
     if (device.includes("PC")) {
         let currentPage = window.location.pathname;
-        let correctPage = currentPage.replace(".html", "-mobil.html");
+        let correctPage = currentPage.replace("-mobil.html", ".html");
 
         if (currentPage !== correctPage) {
             console.log("Current page:", currentPage);

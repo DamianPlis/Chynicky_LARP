@@ -1,4 +1,3 @@
-
 p{
     margin: 0;
 }
@@ -8,15 +7,10 @@ p{
     font-size: 30px;
 }
 
-.kalendar-akci2 {
+.kalendar-akci {
     display: grid;
     grid-template-columns: 1fr 1fr;
     font-family: "Roboto";
-    margin-top: 30px;
-}
-
-.kalendar-akci {
-    margin-top: 60px;
 }
 
 .ozveny-stinu-tlacitko {
@@ -28,27 +22,34 @@ p{
     transition: background-color 0.15s;
     font-size: 16px;
     font-weight: 600;
+    
 }
 
 .ozveny-stinu-tlacitko:hover {
     background-color: rgb(86, 86, 86);
     color: white;
-    border-color: rgb(86, 86, 86);
+    border: none;
 
 }
 
-.ozveny-stinu2, .ozveny-stinu2-navrat, .ozveny-stinu2-coming-soon  {
+.ozveny-stinu2 {
     display: flex;
     width: 100%;
-    margin-bottom: 30px
 }
 
-.organizator {
+.organizatori-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+.organizatori-text {
+    display: inline-block;
+    flex: 1;
+}
+
+
 /*
 @media only screen and (min-width: 1500px) {
     .ozveny-stinu2 {
@@ -79,18 +80,8 @@ p{
     }
 }
 */
+    
 
-@media only screen and (max-width: 500px) {
-    .kalendar-akci {
-    grid-template-columns: 1fr;
-    }
-}
-
-@media only screen and (min-width: 1600px) {
-    .kalendar-akci {
-    grid-template-columns: 1fr 1fr 1fr;
-    }
-}
 .ozveny2-popis {
     flex: 1;
     display: flex;
@@ -148,7 +139,7 @@ body {
     width: 100%;
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
-    padding-top: 115px;
+    padding-top: 100px;
 }
 
 /* Navigační menu */
@@ -161,7 +152,7 @@ nav {
     margin-top: 0px;
     top: 0;
     left: 0;
-    background-image: url(../../kvido\ html-img/foto/Nav.panel/temný\ les\ 3.jpg);
+
 }
 
 /* poloha */
@@ -190,9 +181,9 @@ nav {
 .side-menu {
     position: fixed;  
     right: -250px;
-    width: 150px;
+    width: 250px;
     height: 100%;
-    background-color: rgb(112, 128, 144);
+    background-color: rgb(198, 200, 202);
     transition: right 0.3s;
     flex-direction: column;
     z-index: 5;
@@ -207,6 +198,27 @@ nav {
 
 .center {
     text-align: center;
+}
+
+.menu-item-s-submenu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.ma-submenu {
+    cursor: pointer;
+}
+
+.submenu {
+    display: none;
+    flex-direction: column;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.menu-item-s-submenu:hover .submenu {
+    display: flex;
 }
 
 /* Styl pro odkazy v menu */
@@ -245,5 +257,10 @@ h1{
 .popis-ozveny-stinu {
     text-align: center;
     font-family: "Roboto" , Arial;
+
+}
+
+a{
+    color: aqua;
 
 }

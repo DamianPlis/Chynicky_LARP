@@ -8,6 +8,10 @@ body {
     padding: 0;
 }
 
+
+.decorative-ornamented-divider{
+    z-index: -10;
+}
 /* Navigační menu */
 nav {
     position: fixed;
@@ -287,4 +291,8 @@ a{
     cursor: not-allowed; /* This shows the "stop" icon */
     pointer-events: none; /* Prevents clicks */
     opacity: 0.6; 
+}
+
+.otaznik {
+    height: 1.17em;
 }
