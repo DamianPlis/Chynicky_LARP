@@ -33,9 +33,10 @@ p{
 
 }
 
-.ozveny-stinu2 .ozveny-stinu2-navrat {
+.ozveny-stinu2 .ozveny-stinu2-navrat .ozveny-stinu-2-coming-soon{
     display: flex;
     width: 100%;
+    flex-direction: row;
 }
 
 .organizatori-div {
@@ -186,7 +187,7 @@ nav {
     right: -250px;
     width: 250px;
     height: 100%;
-    background-color: rgb(198, 200, 202);
+    background-color: slategray;
     transition: right 0.3s;
     flex-direction: column;
     z-index: 5;
