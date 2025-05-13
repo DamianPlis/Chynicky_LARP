@@ -5,9 +5,10 @@ p{
 .kalendar-nazev {
     text-align: center;
     font-size: 30px;
+    font-family: "Roboto";
 }
 
-.kalendar-akci {
+.kalendar-akci2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     font-family: "Roboto";
