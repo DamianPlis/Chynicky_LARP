@@ -72,6 +72,26 @@ nav {
     text-align: center;
 }
 
+
+.menu-item-with-sub {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Hide submenu by default */
+.submenu {
+    display: none;
+    flex-direction: column;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+/* Show submenu on hover */
+.menu-item-with-sub:hover .submenu {
+    display: flex;
+}
+
 /* Styl pro odkazy v menu */
 .side-menu a {
     color: white;
