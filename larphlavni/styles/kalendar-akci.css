@@ -30,7 +30,7 @@ p{
     background-color: rgb(86, 86, 86);
     color: white;
     border: none;
-
+    padding: 7px 32px 7px 32px;
 }
 
 .ozveny-stinu2, .ozveny-stinu2-navrat, .ozveny-stinu2-coming-soon{
@@ -157,6 +157,7 @@ nav {
     margin-top: 0px;
     top: 0;
     left: 0;
+    background-image: url(../../kvido\ html-img/foto/Nav.panel/temný\ les\ 3.jpg);
 
 }
 
