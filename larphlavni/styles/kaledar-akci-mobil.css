@@ -145,6 +145,7 @@ body {
 
 /* Navigační menu */
 nav {
+    background-image: url("../../kvido\ html-img/foto/Nav.panel/temný\ les\ 3.jpg");
     position: fixed;
     width: 100%;
     padding: 1rem;

@@ -33,7 +33,7 @@ p{
     padding: 7px 32px 7px 32px;
 }
 
-.ozveny-stinu2, .ozveny-stinu2-navrat, .ozveny-stinu-2-coming-soon{
+.ozveny-stinu2, .ozveny-stinu2-navrat, .ozveny-stinu2-coming-soon{
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -148,6 +148,7 @@ body {
 
 /* Navigační menu */
 nav {
+    background-image: url("../../kvido\ html-img/foto/Nav.panel/temný\ les\ 3.jpg");
     position: fixed;
     width: 100%;
     padding: 1rem;
