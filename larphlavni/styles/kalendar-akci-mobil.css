@@ -219,7 +219,7 @@ nav {
     margin-top: 5px;
 }
 
-.menu-item-s-submenu.open .submenu {
+.menu-item-s-submenu:hover .submenu {
     display: flex;
 }
 
