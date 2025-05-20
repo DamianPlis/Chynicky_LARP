@@ -41,5 +41,5 @@ data.organizatori.forEach(element => {
 </div>
 `
 
-document.querySelector(".kalendar-akci2").innerHTML = htmlRendered
+//document.querySelector(".kalendar-akci2").innerHTML = htmlRendered
 });
