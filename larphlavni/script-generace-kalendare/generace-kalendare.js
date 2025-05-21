@@ -1,4 +1,4 @@
-import {data} from "https://burthgulash.github.io/Chynicky_LARP/script-generace-kalendare/generace-kalendare.js"
+import {data} from "https://burthgulash.github.io/Chynicky_LARP/larphlavni/script-generace-kalendare/kalendar-data.js"
 
 let htmlRendered = ""
 
@@ -47,5 +47,5 @@ data.datum.forEach(datum => {
 </div>
 `
 
-//document.querySelector(".kalendar-akci2").innerHTML = htmlRendered
+document.querySelector(".kalendar-akci2").innerHTML = htmlRendered
 });
