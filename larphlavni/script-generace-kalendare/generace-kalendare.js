@@ -2,7 +2,7 @@ import {data} from "https://burthgulash.github.io/Chynicky_LARP/larphlavni/scrip
 
 let htmlRendered = ""
 
-data.forEach((element, index) => {
+data.forEach((data, index) => {
     
 /*let datumLongerThan1;
 // zjisti na array jestli je 1 dlouhy nebo vic
