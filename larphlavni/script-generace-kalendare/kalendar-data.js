@@ -10,7 +10,7 @@ export const data = [
             "Hugo Redl",
             "Kristián Páca",
         ],
-        obrazek:"https://burthgulash.github.io/Chynicky_LARP/larphlavni/img/Výstřížek.PNG",
+        obrazek:"https://burthgulash.github.io/Chynicky_LARP/larphlavni/img/Výstřižek.PNG",
         link:"https://burthgulash.github.io/Chynicky_LARP/Navrat-mocneho/Navrat-mocneho.html"
     },
     {
