@@ -22,7 +22,7 @@ data.datum.forEach(datum => {
     <p class="datum-left">${datum}</p>
     `
 });
-`
+htmlRendered+=`
 <div class="ozveny-stinu2-navrat">
     <div class="ozveny2-popis">
         <a href="${data.link}">
