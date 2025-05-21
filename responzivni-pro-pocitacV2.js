@@ -32,12 +32,21 @@
 
     if (device.includes("iPhone") || device.includes("Android")) {
         let currentPage = window.location.pathname;
-        let correctPage = currentPage.replace(".html", "-mobil.html");
+        let mobilePage = currentPage.replace(".html", "-mobil.html");
 
-        if (currentPage !== correctPage) {
-            console.log("Current page:", currentPage);
-            console.log("Redirect to:", correctPage);
-            window.location.href = correctPage;
+        if (currentPage !== mobilePage) {
+            fetch(mobilePage, { method: "HEAD" })
+                .then(response => {
+                    if (response.ok) {
+                        console.log("Redirecting to mobile version:", mobilePage);
+                        window.location.href = mobilePage;
+                    } else {
+                        console.log("Mobile page not found, staying on current page.");
+                    }
+                })
+                .catch(error => {
+                    console.log("Error checking mobile page:", error);
+            });
         }
     }
     console.log("Detected Device:", device);
