@@ -10,7 +10,7 @@ document.querySelector("#sideMenu").innerHTML = `
 <a href="https://burthgulash.github.io/Chynicky_LARP/pribehy/pribehy.html" onclick="toggleMenu()">Příběhy</a>
 
 <div class="menu-item-s-submenu">
-    <a href="https://burthgulash.github.io/Chynicky_LARP/Odehrane%20LARPy/Odehranne%20LARPy.html">Odehrané LARPy</a> 
+    <a href="https://burthgulash.github.io/Chynicky_LARP/Odehrane%20LARPy/Odehrane%20LARPy.html">Odehrané LARPy</a> 
     <div class="submenu">
         <a href="https://burthgulash.github.io/Chynicky_LARP/Odehrane%20LARPy/Ozveny%20stinu2/Ozvěny%20stínů%202.html" onclick="toggleMenu()">Ozvěny Stínů 2</a>
         <a href="https://burthgulash.github.io/Chynicky_LARP/Odehrane%20LARPy/Ozveny%20stinu/Ozvěny%20stínů.html" onclick="toggleMenu()">Ozvěny stínů</a>
