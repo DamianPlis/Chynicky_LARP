@@ -10,9 +10,16 @@ if (data.datum.lenght < 1 ) {
     datumLongerThan1 = true
 }*/
 let htmlRenderedOrganizatori = "";
-data.organizatori.forEach(element => {
+data.organizatori.forEach(organizator => {
     htmlRenderedOrganizatori+=`
-    <p class="organizatori-text">${element}</p>
+    <p class="organizatori-text">${organizator}</p>
+    `
+});
+
+let htmlRenderedDatum = ""
+data.datum.forEach(datum => {
+    htmlRenderedOrganizatori+=`
+    <p class="datum-left">${datum}</p>
     `
 });
 `
@@ -26,8 +33,7 @@ data.organizatori.forEach(element => {
                 <p class="datum-right">Datum :</p>
             </div>
             <div class="moznost">
-                <p class="datum-left">14.6.2025 - </p>
-                <p class="datum-left3">15.6.2025</p>
+                ${htmlRenderedOrganizatori}
             </div>
         </div>
         <div class="organizatori">
