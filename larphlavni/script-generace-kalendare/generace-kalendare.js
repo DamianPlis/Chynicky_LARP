@@ -18,7 +18,7 @@ data.organizatori.forEach(organizator => {
 
 let htmlRenderedDatum = ""
 data.datum.forEach(datum => {
-    htmlRenderedOrganizatori+=`
+    htmlRenderedDatum+=`
     <p class="datum-left">${datum}</p>
     `
 });
@@ -33,7 +33,7 @@ htmlRendered+=`
                 <p class="datum-right">Datum :</p>
             </div>
             <div class="moznost">
-                ${htmlRenderedOrganizatori}
+                ${htmlRenderedDatum}
             </div>
         </div>
         <div class="organizatori">
