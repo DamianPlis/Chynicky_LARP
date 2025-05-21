@@ -34,10 +34,19 @@
         let currentPage = window.location.pathname;
         let correctPage = currentPage.replace("-mobil.html", ".html");
 
-        if (currentPage !== correctPage) {
-            console.log("Current page:", currentPage);
-            console.log("Redirect to:", correctPage);
-            window.location.href = correctPage;
+        if (currentPage !== correctPage) {        // Check if mobile page exists before redirecting
+            fetch(mobilePage, { method: "HEAD" })
+                .then(response => {
+                    if (response.ok) {
+                        console.log("Mobile version found, redirecting to:", mobilePage);
+                        window.location.href = mobilePage;
+                    } else {
+                        console.log("Mobile version not found, staying on current page.");
+                    }
+                })
+                .catch(error => {
+                    console.warn("Error checking mobile page:", error);
+            });
         }
     }
 

@@ -15,7 +15,9 @@ export const data = [
     },
     {
         nazev:"Již brzy",
-        datum:"Již brzy",
+        datum:[
+            "Již brzy",
+        ],
         organizatori:[
             "Již brzy"
         ],
