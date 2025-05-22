@@ -322,7 +322,6 @@ a{
   cursor: pointer;
   user-select: none;
   padding: 20px;
-  background: rgba(0,0,0,0.3);
   border-radius: 50%;
 }
 
