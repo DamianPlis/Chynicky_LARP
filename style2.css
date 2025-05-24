@@ -277,11 +277,19 @@ a{
 
 
 /*pro os2*/
+
+.info-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .info {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     margin: 7px 15px 7px 15px;
+    width: 100%;
 }
 
 @media only screen and (min-width: 1300px) {

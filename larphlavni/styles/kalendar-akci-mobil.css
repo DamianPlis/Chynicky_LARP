@@ -217,6 +217,7 @@ nav {
     flex-direction: column;
     padding-left: 20px;
     margin-top: 5px;
+    transition: opacity 0.15s;
 }
 
 .menu-item-s-submenu:hover .submenu {
