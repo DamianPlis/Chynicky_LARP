@@ -315,11 +315,6 @@ a{
 }
 /*pro navrat*/
 
-.prihlasit {
-    cursor: not-allowed; /* This shows the "stop" icon */
-    pointer-events: none; /* Prevents clicks */
-    opacity: 0.6; 
-}
 
 .otaznik {
     height: 2.34em;
