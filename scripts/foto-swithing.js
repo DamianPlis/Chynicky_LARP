@@ -13,6 +13,8 @@ let currentIndex = 1;
 
 // 4. This function shows the image in the lightbox
 function showImage(index, direction = null) {
+  if (!images || images.length === 0) return; // Prevent errors if images are not loaded
+
   // Remove any old animation class
   lightboxImg.classList.remove("slide-left", "slide-right");
 
@@ -54,16 +56,14 @@ lightbox.addEventListener("click", (event) => {
 
 // 8. Show the previous image when ← arrow is clicked
 prevBtn.addEventListener("click", () => {
-  // Go back one image, or wrap around to the last one
   currentIndex = (currentIndex - 1 + images.length) % images.length;
-  showImage(currentIndex); // show the new image
+  showImage(currentIndex, "right");
 });
 
 // 9. Show the next image when → arrow is clicked
 nextBtn.addEventListener("click", () => {
-  // Go forward one image, or wrap around to the first one
   currentIndex = (currentIndex + 1) % images.length;
-  showImage(currentIndex); // show the new image
+  showImage(currentIndex, "left");
 });
 
 // These will store the X position where the user touched
@@ -87,11 +87,11 @@ lightbox.addEventListener("touchend", (e) => {
     if (distance < 0) {
       // Swiped left → next image
       currentIndex = (currentIndex + 1) % images.length;
-      showImage(currentIndex, "left"); // Tell it to animate left
+      showImage(currentIndex, "left");
     } else {
       // Swiped right → previous image
       currentIndex = (currentIndex - 1 + images.length) % images.length;
-      showImage(currentIndex, "right"); // Tell it to animate right
+      showImage(currentIndex, "right");
     }
   }
 });

@@ -148,7 +148,6 @@ body {
 
 /* Navigační menu */
 nav {
-    background-image: url("../../kvido\ html-img/foto/Nav.panel/temný\ les\ 3.jpg");
     position: fixed;
     width: 100%;
     padding: 1rem;
@@ -157,7 +156,7 @@ nav {
     margin-top: 0px;
     top: 0;
     left: 0;
-    background-image: url(../../kvido\ html-img/foto/Nav.panel/temný\ les\ 3.jpg);
+    background-image: url(https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Nav.panel/IMG_6357);
 
 }
 
