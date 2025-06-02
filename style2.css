@@ -386,24 +386,24 @@ a{
       opacity: 1;
     }
   }
-  
-  /* Animation: Slide in from the left */
-  @keyframes slideInFromLeft {
-    from {
-      transform: translateX(-100%);
-      opacity: 0.5;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  /* Add these classes to the image temporarily */
-  .slide-left {
-    animation: slideInFromRight 0.5s ease; /* Extended duration */
-  }
-  
-  .slide-right {
-    animation: slideInFromLeft 0.5s ease; /* Extended duration */
-  }
+
+/* Animation: Slide in from the left */
+@keyframes slideInFromLeft {
+from {
+    transform: translateX(-100%);
+    opacity: 0.5;
+}
+to {
+    transform: translateX(0);
+    opacity: 1;
+}
+}
+
+/* Add these classes to the image temporarily */
+.slide-left {
+animation: slideInFromRight 0.5s ease; /* Extended duration */
+}
+
+.slide-right {
+animation: slideInFromLeft 0.5s ease; /* Extended duration */
+}
