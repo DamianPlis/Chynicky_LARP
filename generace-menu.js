@@ -16,4 +16,6 @@ document.querySelector("#sideMenu").innerHTML = `
         <a href="https://burthgulash.github.io/Chynicky_LARP/Odehrane%20LARPy/Ozveny%20stinu/Ozvěny%20stínů.html" onclick="toggleMenu()">Ozvěny stínů</a>
         <a href="https://burthgulash.github.io/Chynicky_LARP/Odehrane%20LARPy/Hranicni%20tvrz/Hranicni%20tvrz.html" onclick="toggleMenu()">Hraniční tvrz</a>
     </div>
-</div>`
+</div>
+<button class="darkXlight" id="button-theme-switch">🌗</button>
+`

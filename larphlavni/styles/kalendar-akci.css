@@ -195,6 +195,7 @@ nav {
     display: flex;
     padding-top: 60px;
     color: black;
+    position: relative;
 }
 
 .side-menu-open {
@@ -204,7 +205,7 @@ nav {
 .center {
     text-align: center;
 }
-
+/*styly pro submenumenu*/
 .menu-item-s-submenu {
     position: relative;
     display: flex;
@@ -226,7 +227,16 @@ nav {
 .menu-item-s-submenu:hover .submenu {
     display: flex;
 }
-
+/* Styl pro dark light tlacitko */
+.darkXlight {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
 /* Styl pro odkazy v menu */
 .side-menu a {
     color: white;
