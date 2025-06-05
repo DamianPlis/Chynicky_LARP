@@ -148,7 +148,6 @@ body {
 
 /* Navigační menu */
 nav {
-    background-image: url("../../kvido\ html-img/foto/Nav.panel/temný\ les\ 3.jpg");
     position: fixed;
     width: 100%;
     padding: 1rem;
@@ -157,7 +156,7 @@ nav {
     margin-top: 0px;
     top: 0;
     left: 0;
-    background-image: url(../../kvido\ html-img/foto/Nav.panel/temný\ les\ 3.jpg);
+    background-image: url(https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Nav.panel/IMG_6357);
 
 }
 
@@ -196,6 +195,7 @@ nav {
     display: flex;
     padding-top: 60px;
     color: black;
+    position: relative;
 }
 
 .side-menu-open {
@@ -205,7 +205,7 @@ nav {
 .center {
     text-align: center;
 }
-
+/*styly pro submenumenu*/
 .menu-item-s-submenu {
     position: relative;
     display: flex;
@@ -227,7 +227,16 @@ nav {
 .menu-item-s-submenu:hover .submenu {
     display: flex;
 }
-
+/* Styl pro dark light tlacitko */
+.darkXlight {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
 /* Styl pro odkazy v menu */
 .side-menu a {
     color: white;
