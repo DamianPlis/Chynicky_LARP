@@ -23,6 +23,9 @@ btn.addEventListener("click", () => {
 });
 
 function applyTheme(theme) {
-    document.body.classList.toggle("dark", theme === "dark");
-    document.body.classList.toggle("light", theme === "light");
+    if (theme === "dark") {
+        document.body.classList.toggle("dark");
+    } else if (theme === "light") {
+        document.body.classList.toggle("light");
+    }
 }
