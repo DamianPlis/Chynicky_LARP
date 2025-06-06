@@ -145,6 +145,16 @@ body {
     font-family: 'Times New Roman', Times, serif;
     padding-top: 100px;
 }
+/*nastaveni pro light a dark mode*/
+body.light {
+    background-color: rgb(219, 219, 219);
+    color: black;
+}
+
+body.dark {
+    background-color: rgb(10, 10, 10);
+    color: white;
+}
 
 /* Navigační menu */
 nav {
@@ -195,7 +205,6 @@ nav {
     display: flex;
     padding-top: 60px;
     color: black;
-    position: relative;
 }
 
 .side-menu-open {
@@ -229,6 +238,7 @@ nav {
 }
 /* Styl pro dark light tlacitko */
 .darkXlight {
+    background-color: transparent;
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -236,6 +246,9 @@ nav {
     color: white;
     font-size: 24px;
     cursor: pointer;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
 }
 /* Styl pro odkazy v menu */
 .side-menu a {
