@@ -431,3 +431,7 @@ animation: slideInFromRight 0.5s ease; /* Extended duration */
 .slide-right {
 animation: slideInFromLeft 0.5s ease; /* Extended duration */
 }
+
+.z-index.maly {
+    z-index: 2;
+}
