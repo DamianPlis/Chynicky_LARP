@@ -21,6 +21,46 @@ nav {
     text-align: left;
 
 }
+/*Pro divny flex menu*/
+.divny-flex-menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.divny-flex-menu-nadpis-a-mece {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 70px;
+}
+
+.divny-flex-menu-nadpis-container {
+    flex: 1;
+    text-align: center;
+}
+
+.divny-flex-menu-mece-container {
+    flex: 90px;
+    text-align: center;
+}
+
+.divny-flex-menu-podnadpis {
+    text-align: center;
+    margin-top: 7px;
+    flex: 23px;
+}
+
+.divny-flex-menu-mece-img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    cursor: pointer;
+    text-align: left;
+}
 
 /* poloha */
 .pravo {
@@ -276,6 +316,11 @@ a{
 }
 .ico{
     width: 30%;
+}
+
+.o-nas-prvni-text {
+    font-style: italic;
+    margin-top: 50px;
 }
 
 

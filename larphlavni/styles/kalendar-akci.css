@@ -15,15 +15,14 @@ p{
 }
 
 .ozveny-stinu-tlacitko {
-    background-color: rgb(10, 10, 10);
-    color: white;
+    background-color: transparent;
     border: 2px solid rgb(86, 86, 86);
     border-radius: 2px;
     padding: 5px 30px 5px 30px;
     transition: background-color 0.15s;
     font-size: 16px;
     font-weight: 600;
-    
+    cursor: pointer;
 }
 
 .ozveny-stinu-tlacitko:hover {
@@ -166,7 +165,7 @@ nav {
     margin-top: 0px;
     top: 0;
     left: 0;
-    background-image: url(https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Nav.panel/IMG_6357);
+    background-image: url(https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Nav.panel/IMG_6357.jpg);
 
 }
 
@@ -239,7 +238,6 @@ nav {
 /* Styl pro dark light tlacitko */
 .darkXlight {
     background-color: transparent;
-    position: absolute;
     bottom: 20px;
     right: 20px;
     border: none;
@@ -249,6 +247,7 @@ nav {
     text-decoration: none;
     padding: 15px;
     display: block;
+    text-align: left;
 }
 /* Styl pro odkazy v menu */
 .side-menu a {

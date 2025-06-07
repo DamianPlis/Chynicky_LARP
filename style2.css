@@ -116,7 +116,6 @@ nav {
 /* Styl pro dark light tlacitko */
 .darkXlight {
     background-color: transparent;
-    position: absolute;
     bottom: 20px;
     right: 20px;
     border: none;
@@ -126,6 +125,7 @@ nav {
     text-decoration: none;
     padding: 15px;
     display: block;
+    text-align: left;
 }
 /* písmo */
 h4{
@@ -147,6 +147,7 @@ h1{
 }
 
 .nadpis{
+    margin-top: 5px;
     margin-bottom: 0px;
 }
 
@@ -299,6 +300,10 @@ a{
     }
 }
 
+.o-nas-prvni-text {
+    font-style: italic;
+    margin-top: 50px;
+}
 
 /*pro os2*/
 

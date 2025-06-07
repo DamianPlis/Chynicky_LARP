@@ -19,10 +19,13 @@ btn.addEventListener("click", () => {
     const newTheme = document.body.classList.contains("dark") ? "light" : "dark";
     applyTheme(newTheme);
     // Save to iframe
-    iframe.contentWindow.postMessage({ type: "set-theme", value: newTheme }, "https://yourusername.github.io");
+    iframe.contentWindow.postMessage({ type: "set-theme", value: newTheme }, "https://burthgulash.github.io");
 });
 
 function applyTheme(theme) {
-    document.body.classList.toggle("dark", theme === "dark");
-    document.body.classList.toggle("light", theme === "light");
+    if (theme === "dark") {
+        document.body.classList.toggle("dark");
+    } else if (theme === "light") {
+        document.body.classList.toggle("light");
+    }
 }
