@@ -33,11 +33,11 @@ p{
 }
 
 .akce-tlacitko-light {
-    color: white
+    color: black;
 }
 
 .akce-tlacitko-dark {
-    color: black;
+    color: white;
 }
 
 /**/
