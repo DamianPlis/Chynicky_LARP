@@ -10,12 +10,12 @@ body {
 /*nastaveni pro light a dark mode*/
 body.light {
     background-color: rgb(219, 219, 219);
-    color: black;
+    color: black !important;
 }
 
 body.dark {
     background-color: rgb(10, 10, 10);
-    color: white;
+    color: white !important;
 }
 
 
