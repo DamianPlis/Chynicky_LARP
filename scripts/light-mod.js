@@ -1,6 +1,5 @@
 const iframe = document.getElementById("theme-sync");
 const btn = document.getElementById("button-theme-switch");
-const akceTlacitko = document.querySelectorAll(".akce-tlacitko");
 
 // 1. Ask iframe for theme on load
 iframe.onload = () => {
@@ -25,6 +24,7 @@ btn.addEventListener("click", () => {
 
 function applyTheme(theme) {
     document.body.classList.remove("dark", "light");
+    const akceTlacitko = document.querySelectorAll(".akce-tlacitko");
     if (theme === "dark") {
         document.body.classList.toggle("dark");
         akceTlacitko.forEach((button) => {
