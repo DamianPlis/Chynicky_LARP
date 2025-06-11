@@ -156,12 +156,12 @@ body {
 /*nastaveni pro light a dark mode*/
 body.light {
     background-color: rgb(219, 219, 219);
-    color: black !important;
+    color: black;
 }
 
 body.dark {
     background-color: rgb(10, 10, 10);
-    color: white !important;
+    color: white;
 }
 
 /* Navigační menu */

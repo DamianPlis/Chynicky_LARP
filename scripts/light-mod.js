@@ -1,5 +1,6 @@
 const iframe = document.getElementById("theme-sync");
 const btn = document.getElementById("button-theme-switch");
+const navBar = document.querySelector("nav")
 
 // 1. Ask iframe for theme on load
 iframe.onload = () => {
@@ -27,15 +28,20 @@ function applyTheme(theme) {
     const akceTlacitko = document.querySelectorAll(".akce-tlacitko");
     if (theme === "dark") {
         document.body.classList.toggle("dark");
+        // for each button change the class
         akceTlacitko.forEach((button) => {
             button.classList.remove("akce-tlacitko-light");
             button.classList.add("akce-tlacitko-dark");
         });
+
+        navBar.style.setProperty("background-image","url(https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Nav.panel/temný%20les%203.jpg;")
     } else if (theme === "light") {
         akceTlacitko.forEach((button) => {
             button.classList.remove("akce-tlacitko-dark");
             button.classList.add("akce-tlacitko-light");
         })
         document.body.classList.toggle("light");
+        navBar.style.setProperty("background-image","url(https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Nav.panel/IMG_6357.jpg;")
+
     }
 }
