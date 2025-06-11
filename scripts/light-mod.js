@@ -36,6 +36,7 @@ function applyTheme(theme) {
 
         navBar.style.setProperty("background-image","url(https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Nav.panel/temný%20les%203.jpg;")
     } else if (theme === "light") {
+        // for each button change the class
         akceTlacitko.forEach((button) => {
             button.classList.remove("akce-tlacitko-dark");
             button.classList.add("akce-tlacitko-light");
