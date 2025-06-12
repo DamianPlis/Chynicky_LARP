@@ -29,7 +29,8 @@ function applyTheme(theme) {
     const akceTlacitko = document.querySelectorAll(".akce-tlacitko");
     if (theme === "dark") {
         document.body.classList.toggle("dark");
-        // for each button change the class
+        // for each button change the class + change random linear gradient
+        akceTlacitko.style.setProperty("background", "linear-gradient(var(--background-color-dark)) padding-box,linear-gradient(-45deg, rgb(66, 66, 66), rgb(110, 110, 110)) border-box;")
         akceTlacitko.forEach((button) => {
             button.classList.remove("akce-tlacitko-light");
             button.classList.add("akce-tlacitko-dark");
@@ -38,7 +39,8 @@ function applyTheme(theme) {
         navBar.style.setProperty("background-image", "url(https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Nav.panel/temný%20les%203.jpg;")
         updateIcons();
     } else if (theme === "light") {
-        // for each button change the class
+        // for each button change the class + change random linear gradient
+        akceTlacitko.style.setProperty("background", "linear-gradient(var(--background-color-light)) padding-box,linear-gradient(-45deg, rgb(66, 66, 66), rgb(110, 110, 110)) border-box;")
         akceTlacitko.forEach(button => {
             button.classList.remove("akce-tlacitko-dark");
             button.classList.add("akce-tlacitko-light");

@@ -1,5 +1,9 @@
 :root {
     color-scheme: dark light;
+    --background-color-dark: rgb(10, 10, 10);
+    --background-color-light: rgb(219, 219, 219);
+    --text-color-dark: white;
+    --text-color-light: black;
 }
 
 p{
@@ -20,7 +24,7 @@ p{
 /*pro tlacitko na jinou akci*/
 .akce-tlacitko {
     background-color: transparent;
-    border: 2px solid rgb(86, 86, 86);
+    border: 2px solid transparent;
     border-radius: 2px;
     padding: 5px 30px 5px 30px;
     transition: background-color 0.15s;
@@ -30,10 +34,8 @@ p{
 }
 
 .akce-tlacitko:hover {
-    background-color: rgb(86, 86, 86);
+    background: rgb(86, 86, 86)!important;
     color: white;
-    border: none;
-    padding: 7px 32px 7px 32px;
 }
 
 .akce-tlacitko-light {
