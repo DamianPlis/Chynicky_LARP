@@ -34,8 +34,9 @@ function applyTheme(theme) {
             button.classList.remove("akce-tlacitko-light");
             button.classList.add("akce-tlacitko-dark");
         });
-
-        navBar.style.setProperty("background-image","url(https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Nav.panel/temný%20les%203.jpg;")
+        // Change the background image of the navBar
+        navBar.style.setProperty("background-image", "url(https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Nav.panel/temný%20les%203.jpg;")
+        updateIcons();
     } else if (theme === "light") {
         // for each button change the class
         akceTlacitko.forEach(button => {
@@ -43,12 +44,22 @@ function applyTheme(theme) {
             button.classList.add("akce-tlacitko-light");
         })
         document.body.classList.toggle("light");
-        navBar.style.setProperty("background-image","url(https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Nav.panel/IMG_6357.jpg;")
+        // Change the background image of the navBar
+        navBar.style.setProperty("background-image", "url(https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Nav.panel/IMG_6357.jpg;")
+        updateIcons();
     }
 }
 
-function updateIcons () {
+function updateIcons() {
     const isLight = document.querySelector("body").classList.contains("light")
 
-    document.querySelectorAll()
+    document.querySelectorAll().forEach(image => {
+        const name = image.dataset.name;
+        if (isLight) {
+            image.src = `https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Ikony-img/${name}-light.png`;
+        }
+        else {
+            image.src = `https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Ikony-img/${name}.png`;
+        }
+    });
 }
