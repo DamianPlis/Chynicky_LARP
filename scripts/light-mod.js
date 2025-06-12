@@ -46,3 +46,9 @@ function applyTheme(theme) {
         navBar.style.setProperty("background-image","url(https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Nav.panel/IMG_6357.jpg;")
     }
 }
+
+function updateIcons () {
+    const isLight = document.querySelector("body").classList.contains("light")
+
+    document.querySelectorAll()
+}

@@ -1,3 +1,7 @@
+:root {
+    color-scheme: dark light;
+}
+
 p{
     margin: 0;
 }
@@ -146,6 +150,8 @@ p{
 
 /* Obecné nastavení stránky */
 body {
+    /* background-color: light-dark(rgb(219, 219, 219),rgb(10, 10, 10)); */
+    /* color: light-dark(white,black); */
     background-color: rgb(10, 10, 10);
     color: white;
     width: 100%;
