@@ -27,7 +27,7 @@ p{
     border: 2px solid transparent;
     border-radius: 2px;
     padding: 5px 30px 5px 30px;
-    transition: background-color 0.15s;
+    transition: var(--background-color-dark) 0.15s, var(--background-color-light) 0.15s;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
