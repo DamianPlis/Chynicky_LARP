@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Galerie obrázků ze všech akcí">
     <link rel="stylesheet" href="styles/foto-galerie.css">
+    <link rel="stylesheet" href="https://burthgulash.github.io/Chynicky_LARP/style2.css">
+    <link rel="shorcut icon" href="https://burthgulash.github.io/Chynicky_LARP/larphlavni/favicon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
     <title>Galerie obrázků</title>
 </head>
@@ -35,9 +39,20 @@
         </div>
     </nav>
     <p>Zde budou všechny fotky pořízené na novějších akcích</p>
-    <div></div>
+    <div class="filtrovani">
+        <label hidden for="filtr-akci">Vyberte akci</label>
+        <select class="filtr-select" name="Filtr" id="filtr-akci">
+            <option disabled selected hidden value="Placeholder">Vyberte akci</option>
+            <option value="OS1">Ozvěny Stinu 1</option>
+            <option value="OS2">Ozvěny Stinu 2</option>
+
+        </select>
+        <button class="filter-button" id="filtrovat-fotky">Filtrovat <i class="fas fa-filter"></i></button>
+    </div>
+    <div class="per-foto foto-galerie" id="foto-galerie"></div>
 
     <script src="https://burthgulash.github.io/Chynicky_LARP/obecny.js"></script>
     <script src="https://burthgulash.github.io/Chynicky_LARP/generace-menu.js"></script>
+    <script type="module" src="scripts/foto-galerie.js"></script>
 </body>
 </html>

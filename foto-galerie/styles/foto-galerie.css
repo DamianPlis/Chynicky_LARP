@@ -1,0 +1,40 @@
+.filtrovani {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+    gap: 10px; */
+    text-align: right;
+    margin-right: 3%;
+    margin-top: 50px;
+}
+
+.filtrovani select {
+    color: white;
+    width: 130px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #696969;
+}
+
+.filtrovani button {
+    color: white;
+    width: 85px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #696969;
+}
+
+.foto-galerie {
+    margin-top: 20px !important;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
