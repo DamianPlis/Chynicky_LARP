@@ -14,12 +14,19 @@ let currentIndex = 1;
 // 4. This function shows the image in the lightbox
 function showImage(index, direction = null) {
     if (!images || images.length === 0) return; // Prevent errors if images are not loaded
-
+    let lightboxImgSrc = ""
     // Remove any old animation class
     lightboxImg.classList.remove("slide-left", "slide-right");
 
+    // replace the webp img with a jpg or jpeg version based on the funtion + make sure its not null
+    if (getImageFormat(images[index].src)) {
+        lightboxImgSrc = images[index].src.replace("webp", getImageFormat(images[index].src))
+    } else {
+        console.error("Image format not found or something went wrong");
+    }
+
     // Set the image source
-    lightboxImg.src = images[index].src;
+    lightboxImgSrc = lightboxImg.src
 
     // If a direction was provided, add animation class
     if (direction === "left") {
@@ -116,3 +123,8 @@ window.addEventListener("keydown", (event) => {
         showImage(currentIndex, "left");
     }
 });
+
+export function getImageFormat(src) {
+    const match = src.match(/\.([a-zA-Z0-9]+)(?=\?|$)/);
+    return match ? match[1].toLowerCase() : null;
+}
