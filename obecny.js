@@ -1,11 +1,10 @@
 // pro side menu
 function toggleMenu() {
-    let mobileOrNot;
     const sideMenu = document.getElementById("sideMenu");
-    const menuButton = document.querySelector(".menu");
+    // const menuButton = document.querySelector(".menu");
 
     sideMenu.classList.toggle("side-menu-open");
-    menuButton.classList.toggle("menu-open");
+    //  menuButton.classList.toggle("menu-open");
 
     // Add or remove the outside click listener depending on menu state
     if (sideMenu.classList.contains("side-menu-open")) {
