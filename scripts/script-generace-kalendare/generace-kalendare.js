@@ -1,4 +1,4 @@
-import { data } from "https://burthgulash.github.io/Chynicky_LARP/larphlavni/script-generace-kalendare/kalendar-data.js"
+import { data } from "https://burthgulash.github.io/Chynicky_LARP/larphlavni/scripts/script-generace-kalendare/kalendar-data.js"
 
 let htmlRendered = ""
 
