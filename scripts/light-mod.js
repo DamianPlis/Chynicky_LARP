@@ -37,7 +37,7 @@ function applyTheme(theme) {
             button.classList.add("akce-tlacitko-dark");
         });
         // Change the background image of the navBar
-        navBar.style.setProperty("background-image", "url(https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Nav.panel/temný%20les%203.jpg;")
+        navBar.style.setProperty("background-image", "url(https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Nav.panel/temný%20les%203.jpg")
         updateIcons();
     } else if (theme === "light") {
         // for each button change the class + change random linear gradient
