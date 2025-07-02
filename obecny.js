@@ -12,13 +12,17 @@ function toggleMenu() {
     } else {
         document.removeEventListener("click", menuOutsideClick);
     }
-    function menuOutsideClick(event) {
-        if (!sideMenu.contains(event.target) && !menuButton.contains(event.target)) {
-            // Clicked outside the menu and button, so close the menu
-            sideMenu.classList.remove("side-menu-open");
-            menuButton.classList.remove("menu-open");
-            document.removeEventListener("click", menuOutsideClick);
-        }
+}
+
+// Move this function OUTSIDE toggleMenu!
+function menuOutsideClick(event) {
+    const sideMenu = document.getElementById("sideMenu");
+    const menuButton = document.querySelector(".menu");
+    if (!sideMenu.contains(event.target) && !menuButton.contains(event.target)) {
+        // Clicked outside the menu and button, so close the menu
+        sideMenu.classList.remove("side-menu-open");
+        menuButton.classList.remove("menu-open");
+        document.removeEventListener("click", menuOutsideClick);
     }
 }
 

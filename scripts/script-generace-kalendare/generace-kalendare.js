@@ -1,4 +1,4 @@
-import { data } from "https://burthgulash.github.io/Chynicky_LARP/larphlavni/scripts/script-generace-kalendare/kalendar-data.js"
+import { data } from "./kalendar-data.js";
 console.log(data)
 
 let htmlRendered = ""
@@ -20,7 +20,7 @@ data.forEach((data, index) => {
     let htmlRenderedDatum = ""
     data.datum.forEach(datum => {
         htmlRenderedDatum += `
-    <p class="datum-left">${datum}</p>s
+    <p class="datum-left">${datum}</p>
     `
     });
     htmlRendered += `

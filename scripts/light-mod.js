@@ -1,3 +1,5 @@
+import { getImageFormat } from "./utilities/imgformat.js";
+
 const iframe = document.getElementById("theme-sync");
 const btn = document.getElementById("button-theme-switch");
 const navBar = document.querySelector("nav")
@@ -20,9 +22,9 @@ window.addEventListener("message", (event) => {
 // 3. User changes theme
 btn.addEventListener("click", () => {
     const newTheme = document.body.classList.contains("dark") ? "light" : "dark";
-    applyTheme(newTheme);
     // Save to iframe
     iframe.contentWindow.postMessage({ type: "set-theme", value: newTheme }, "https://burthgulash.github.io");
+    applyTheme(newTheme);
 });
 
 function applyTheme(theme) {
@@ -32,7 +34,7 @@ function applyTheme(theme) {
         document.body.classList.toggle("dark");
         // for each button change the class + change random linear gradient
         akceTlacitko.forEach((button) => {
-            akceTlacitko.style.setProperty("background", "linear-gradient(var(--background-color-dark)) padding-box,linear-gradient(-45deg, rgb(66, 66, 66), rgb(110, 110, 110)) border-box")
+            button.style.setProperty("background", "linear-gradient(var(--background-color-dark)) padding-box,linear-gradient(-45deg, rgb(66, 66, 66), rgb(110, 110, 110)) border-box")
             button.classList.remove("akce-tlacitko-light");
             button.classList.add("akce-tlacitko-dark");
         });
@@ -42,7 +44,7 @@ function applyTheme(theme) {
     } else if (theme === "light") {
         // for each button change the class + change random linear gradient
         akceTlacitko.forEach(button => {
-            akceTlacitko.style.setProperty("background", "linear-gradient(var(--background-color-light)) padding-box,linear-gradient(-45deg, rgb(66, 66, 66), rgb(110, 110, 110)) border-box")
+            button.style.setProperty("background", "linear-gradient(var(--background-color-light)) padding-box,linear-gradient(-45deg, rgb(66, 66, 66), rgb(110, 110, 110)) border-box")
             button.classList.remove("akce-tlacitko-dark");
             button.classList.add("akce-tlacitko-light");
         })
@@ -57,12 +59,23 @@ function updateIcons() {
     const isLight = document.querySelector("body").classList.contains("light")
 
     document.querySelectorAll("#icon-img").forEach(image => {
+        const imgFormat = getImageFormat(image.src) // Get the image format is correct
         const name = image.dataset.name;
+        // docasny fix protoye nemuyu prejmenovat img
+        if (name === "warior-transparent") {
+            if (isLight) {
+                image.src = `https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Ikony-img/${name}-light.${imgFormat}`;
+            } else {
+                console.log("Warior transparent else")
+                image.src = `https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Ikony-img/warrior-transparent.${imgFormat}`;
+                return
+            }
+        }
         if (isLight) {
-            image.src = `https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Ikony-img/${name}-light.png`;
+            image.src = `https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Ikony-img/${name}-light.${imgFormat}`;
         }
         else {
-            image.src = `https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Ikony-img/${name}.png`;
+            image.src = `https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Ikony-img/${name}.${imgFormat}`;
         }
     });
 }
