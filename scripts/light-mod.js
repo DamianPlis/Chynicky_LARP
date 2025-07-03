@@ -5,6 +5,7 @@ const btn = document.getElementById("button-theme-switch");
 const navBar = document.querySelector("nav")
 const iconContainer = document.getElementById("icon-img-container")
 
+applyTheme("dark")// Default theme
 // 1. Ask iframe for theme on load
 iframe.onload = () => {
     iframe.contentWindow.postMessage("get-theme", "https://burthgulash.github.io");
@@ -66,7 +67,6 @@ function updateIcons() {
             if (isLight) {
                 image.src = `https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Ikony-img/${name}-light.${imgFormat}`;
             } else {
-                console.log("Warior transparent else")
                 image.src = `https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Ikony-img/warrior-transparent.${imgFormat}`;
                 return
             }
@@ -79,3 +79,4 @@ function updateIcons() {
         }
     });
 }
+

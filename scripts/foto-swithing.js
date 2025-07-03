@@ -40,6 +40,9 @@ function showImage(index, direction = null) {
     // Show the lightbox
     lightbox.classList.remove("hidden");
 
+    // stop the user from scrolling the background
+    document.body.style.setProperty("overflow", "hidden");
+
     preloadImages(index); // Preload images around the current one
 }
 
@@ -52,13 +55,13 @@ images.forEach((img, index) => {
 
 // 6. Close the lightbox when the ❌ button is clicked
 closeBtn.addEventListener("click", () => {
-    lightbox.classList.add("hidden"); // add "hidden" class to hide it
+    hideLightbox(); // add "hidden" class to hide it
 });
 
 // 7. Also close the lightbox if user clicks the background (but NOT the image)
 lightbox.addEventListener("click", (event) => {
     if (event.target === lightbox) {
-        lightbox.classList.add("hidden");
+        hideLightbox();
     }
 });
 
@@ -111,7 +114,7 @@ window.addEventListener("keydown", (event) => {
 
 function escapeLightbox(event) {
     if (event.key === "Escape") {
-        lightbox.classList.add("hidden");
+        hideLightbox();
     }
 }
 // Add a listener for the Arrows key to switch the lightbox
@@ -165,4 +168,10 @@ function findJpgImage(index) {
         foundJpgImage = imgWebp; // fallback to .webp
     }
     return foundJpgImage;
+}
+
+function hideLightbox() {
+    lightbox.classList.add("hidden")
+    // Allow scrolling again
+    document.body.style.removeProperty("overflow");
 }

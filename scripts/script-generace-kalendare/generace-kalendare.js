@@ -1,5 +1,4 @@
 import { data } from "./kalendar-data.js";
-console.log(data)
 
 let htmlRendered = ""
 
