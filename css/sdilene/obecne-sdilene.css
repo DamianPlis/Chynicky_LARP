@@ -1,3 +1,11 @@
+:root {
+    color-scheme: dark light;
+    --background-color-dark: rgb(10, 10, 10);
+    --background-color-light: rgb(219, 219, 219);
+    --text-color-dark: white;
+    --text-color-light: black;
+}
+
 /* Obecné nastavení stránky */
 body {
     /* background-color: light-dark(rgb(219, 219, 219),rgb(10, 10, 10)); */
