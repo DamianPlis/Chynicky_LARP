@@ -160,7 +160,7 @@ h1{
     position: relative;
  }
 
- .nahoru2{
+.nahoru2{
     margin-top: -100px !important;
 
 }
@@ -168,13 +168,13 @@ h1{
  .dolu{
     margin-top: 120px;
     position: relative;
- }
+}
 
  .bez-mezer{
     margin-top: 0;
     padding-top: 0;
     line-height: 1;
- }
+}
 
  .worker{
     display: flex;
