@@ -1,0 +1,16 @@
+.per-foto {
+    display: flex; 
+    justify-content: center; 
+    gap: 10px; 
+    flex-wrap: wrap; 
+    max-width: 90%; 
+    margin: 0 auto; 
+}
+
+.per-foto img {
+    width: auto; /* Umožní přizpůsobit šířku */
+    max-width: 300px; /* Nastaví maximální šířku obrázku */
+    height: auto; /* Zachová poměr stran */
+    object-fit: contain; /* Zajistí správné zobrazení bez deformace */
+    border-radius: 10px; /* Zaoblení rohů */
+}
