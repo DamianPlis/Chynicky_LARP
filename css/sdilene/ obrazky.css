@@ -14,3 +14,92 @@
     object-fit: contain; /* Zajistí správné zobrazení bez deformace */
     border-radius: 10px; /* Zaoblení rohů */
 }
+
+/*pro zvetsene obrazky*/
+
+.zvetsene {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.zvetsene.hidden {
+  display: none;
+}
+
+.zvetsene img {
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.arrow {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  user-select: none;
+  padding: 20px 30px;
+  border-radius: 50%;
+}
+
+.arrow.left {
+  left: 20px;
+  padding-left: 10px !important;
+}
+
+.arrow.right {
+  right: 20px;
+  padding-right: 10px !important;
+}
+
+/* Animation: Slide in from the right */
+@keyframes slideInFromRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0.5;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+/* Animation: Slide in from the left */
+@keyframes slideInFromLeft {
+from {
+    transform: translateX(-100%);
+    opacity: 0.5;
+}
+to {
+    transform: translateX(0);
+    opacity: 1;
+}
+}
+
+/* Add these classes to the image temporarily */
+.slide-left {
+animation: slideInFromRight 0.5s ease; /* Extended duration */
+}
+
+.slide-right {
+animation: slideInFromLeft 0.5s ease; /* Extended duration */
+}
