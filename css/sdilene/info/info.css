@@ -1,11 +1,49 @@
- .worker{
+/*pro os2*/
+
+.info-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin: 7px 15px 7px 15px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 1300px) {
+    .info {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .info {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .info {
+        grid-template-columns: 1fr;
+    }
+}
+
+.icons h1{
+    flex: 1;
+    padding: 10xp;
+    text-align: center;
+}
+
+.worker{
     display: flex;
     justify-content: center;
     gap: 20px;
     height: 100px;
  }
 
- .icons{
+.icons{
     display: flex;
     justify-content: space-between;
  }

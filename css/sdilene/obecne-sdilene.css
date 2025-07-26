@@ -17,6 +17,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     padding-top: 100px;
 }
+
 /*nastaveni pro light a dark mode*/
 body.light {
     background-color: var(--background-color-light);
@@ -28,59 +29,63 @@ body.dark {
     color: var(--text-color-dark);
 }
 
+.center {
+    text-align: center;
+}
+
 /*RŮZNÉ STYLY PRO TEXT/PISMO MOŽNA SMAZAT NEBO ZMĚNIT*/
 /*RŮZNÉ STYLY PRO TEXT/PISMO MOŽNA SMAZAT NEBO ZMĚNIT*/
 /*RŮZNÉ STYLY PRO TEXT/PISMO MOŽNA SMAZAT NEBO ZMĚNIT*/
 
 /* písmo */
-h4{
+h4 {
     font-style: oblique;
     margin-top: -7px;
-    
+
 }
 
-h3{
-   padding-top: 0;
-   margin-top: 0;
+h3 {
+    padding-top: 0;
+    margin-top: 0;
 
-    
+
 }
 
-h1{
+h1 {
     font-size: 33px;
     margin-top: 3px;
 }
 
-.nadpis{
+.nadpis {
     margin-top: 5px;
     margin-bottom: 0px;
 }
 
-.italic{
-   font-style: italic;
+.italic {
+    font-style: italic;
 }
 
-.nahoru{
+.nahoru {
     margin-top: -120px;
     position: relative;
- }
+}
 
-.nahoru2{
+.nahoru2 {
     margin-top: -100px !important;
 
 }
 
- .dolu{
+.dolu {
     margin-top: 120px;
     position: relative;
 }
 
- .bez-mezer{
+.bez-mezer {
     margin-top: 0;
     padding-top: 0;
     line-height: 1;
 }
 
 a {
-   color: aqua;
+    color: aqua;
 }
