@@ -1,15 +1,15 @@
 /* Navigační menu */
 nav {
     position: fixed;
-    width: 100%;
-    background-image: url("kvido\ html-img/foto/Nav.panel/temný\ les\ 3.jpg");
+    width: calc(100vw - 2rem);
+    background-image: url(https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Nav.panel/temný%20les%203.jpg);
     padding: 1rem;
     z-index: 5;
     margin-top: 0px;
     top: 0;
     left: 0;
     text-align: left;
-
+    height: auto;
 }
 
 /*Pro divny flex menu*/
@@ -36,6 +36,7 @@ nav {
 
 .divny-flex-menu-mece-container {
     text-align: center;
+    width: 90px;
 }
 
 .divny-flex-menu-podnadpis {
@@ -87,8 +88,8 @@ nav {
 
 .side-menu {
     position: fixed;
-    right: -150px;
-    width: 150px;
+    right: -100%;
+    width: min(400px, 70%);
     height: 100%;
     background-color: slategrey;
     transition: right 0.3s;

@@ -39,7 +39,7 @@
             .then(response => {
                 if (response.ok) {
                     console.log("PC version found, redirecting to:", correctPage);
-                    window.location.href = mobilePage;
+                    window.location.href = correctPage;
                 } else {
                     console.log("PC version not found, staying on current page.");
                 }

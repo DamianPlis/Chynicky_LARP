@@ -1,4 +1,4 @@
-p{
+p {
     margin: 0;
 }
 
@@ -13,13 +13,15 @@ p{
     grid-template-columns: 1fr;
     font-family: "Roboto";
     margin-top: 30px;
+    padding: 2px;
 }
 
 .kalendar-akci {
     margin-top: 60px;
 }
 
-.ozveny-stinu-tlacitko {
+.ozveny-stinu-tlacitko,
+.akce-tlacitko {
     background-color: rgb(10, 10, 10);
     color: white;
     border: solid 2px rgb(86 86 86);
@@ -30,7 +32,8 @@ p{
     font-weight: 600;
 }
 
-.ozveny-stinu-tlacitko:hover {
+.ozveny-stinu-tlacitko:hover,
+.akce-tlacitko:hover {
     background-color: rgb(86, 86, 86);
     color: white;
     border-color: rgb(86, 86, 86);
@@ -38,11 +41,13 @@ p{
 
 }
 
-.ozveny-stinu2, .ozveny-stinu2-navrat, .ozveny-stinu2-coming-soon  {
+.ozveny-stinu2,
+.ozveny-stinu2-navrat,
+.ozveny-stinu2-coming-soon {
     display: flex;
     width: 100%;
     margin-bottom: 30px;
-    flex-direction: row;  
+    flex-direction: row;
 }
 
 .organizator {
@@ -51,6 +56,7 @@ p{
     justify-content: center;
     align-items: center;
 }
+
 /*
 @media only screen and (min-width: 1500px) {
     .ozveny-stinu2 {
@@ -99,6 +105,7 @@ p{
 .datum-left {
     display: block;
 }
+
 .datum-left2 {
     display: inline-block;
 }
@@ -181,7 +188,7 @@ nav {
 
 
 .side-menu {
-    position: fixed;  
+    position: fixed;
     right: -150px;
     width: 150px;
     height: 100%;
@@ -231,23 +238,24 @@ nav {
     padding: 15px;
     display: block;
 }
+
 .side-menu a:hover {
     background: darkgray;
 }
 
 /* písmo */
-h4{
+h4 {
     font-style: oblique;
     margin-top: -7px;
 }
 
-h1{
+h1 {
     font-size: 33px;
     margin-top: 3px;
 }
 
-.italic{
-   font-style: italic;
+.italic {
+    font-style: italic;
 }
 
 /* obecne styly k stránce*/
@@ -259,6 +267,6 @@ h1{
 
 .popis-ozveny-stinu {
     text-align: center;
-    font-family: "Roboto" , Arial;
+    font-family: "Roboto", Arial;
 
 }
