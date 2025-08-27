@@ -1,0 +1,91 @@
+:root {
+    color-scheme: dark light;
+    --background-color-dark: rgb(10, 10, 10);
+    --background-color-light: rgb(219, 219, 219);
+    --text-color-dark: white;
+    --text-color-light: black;
+}
+
+/* Obecné nastavení stránky */
+body {
+    /* background-color: light-dark(rgb(219, 219, 219),rgb(10, 10, 10)); */
+    /* color: light-dark(white,black); */
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+    width: 100%;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 100px;
+}
+
+/*nastaveni pro light a dark mode*/
+body.light {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+}
+
+body.dark {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+.center {
+    text-align: center;
+}
+
+/*RŮZNÉ STYLY PRO TEXT/PISMO MOŽNA SMAZAT NEBO ZMĚNIT*/
+/*RŮZNÉ STYLY PRO TEXT/PISMO MOŽNA SMAZAT NEBO ZMĚNIT*/
+/*RŮZNÉ STYLY PRO TEXT/PISMO MOŽNA SMAZAT NEBO ZMĚNIT*/
+
+/* písmo */
+h4 {
+    font-style: oblique;
+    margin-top: -7px;
+
+}
+
+h3 {
+    padding-top: 0;
+    margin-top: 0;
+
+
+}
+
+h1 {
+    font-size: 33px;
+    margin-top: 3px;
+}
+
+.nadpis {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.nahoru {
+    margin-top: -120px;
+    position: relative;
+}
+
+.nahoru2 {
+    margin-top: -100px !important;
+
+}
+
+.dolu {
+    margin-top: 120px;
+    position: relative;
+}
+
+.bez-mezer {
+    margin-top: 0;
+    padding-top: 0;
+    line-height: 1;
+}
+
+a {
+    color: aqua;
+}

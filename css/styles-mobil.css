@@ -36,6 +36,8 @@ nav {
     justify-content: center;
     text-align: center;
     min-height: 70px;
+    gap: 7px;
+    /* Functional change: added gap between flex items */
 }
 
 .divny-flex-menu-nadpis-container {
