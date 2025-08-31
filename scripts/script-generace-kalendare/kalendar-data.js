@@ -14,12 +14,14 @@ export const data = [
         link: "https://burthgulash.github.io/Chynicky_LARP/Navrat-mocneho/Navrat-mocneho.html"
     },
     {
-        nazev: "Již brzy",
+        nazev: "Z popelu kalicha",
         datum: [
             "Již brzy",
         ],
         organizatori: [
-            "Již brzy"
+            "Kvido Redl",
+            "Hugo Redl",
+            "Kristián Páca",
         ],
         obrazek: "https://burthgulash.github.io/Chynicky_LARP/larphlavni/img/questionmark2.2.png",
         link: "#"
