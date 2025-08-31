@@ -58,11 +58,16 @@ function applyTheme(theme) {
 
 function updateIcons() {
     const isLight = document.querySelector("body").classList.contains("light")
-
+    const hamburgerSwords = document.querySelector("menu-btn")
+    if (isLight) {
+        hamburgerSwords.src = "https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Nav.panel/tri%20mece%20final%20final-light.png"
+    } else {
+        hamburgerSwords.src = "https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Nav.panel/tri%20mece%20final%20final.png"
+    }
     document.querySelectorAll("#icon-img").forEach(image => {
         const imgFormat = getImageFormat(image.src) // Get the image format is correct
         const name = image.dataset.name;
-        // docasny fix protoye nemuyu prejmenovat img
+        // docasny fix protoye nemuzu prejmenovat img
         if (name === "warior-transparent") {
             if (isLight) {
                 image.src = `https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Ikony-img/${name}-light.${imgFormat}`;
