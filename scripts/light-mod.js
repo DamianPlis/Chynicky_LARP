@@ -58,7 +58,7 @@ function applyTheme(theme) {
 
 function updateIcons() {
     const isLight = document.querySelector("body").classList.contains("light")
-    const hamburgerSwords = document.querySelector("menu-btn")
+    const hamburgerSwords = document.querySelector(".menu-btn")
     if (isLight) {
         hamburgerSwords.src = "https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Nav.panel/tri%20mece%20final%20final-light.png"
     } else {
@@ -84,4 +84,5 @@ function updateIcons() {
         }
     });
 }
+
 
