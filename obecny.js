@@ -46,7 +46,7 @@ window.addEventListener("resize", updatePadding);
 
 let activeTime = 0; // Track time spent actively on the page
 let lastActiveTime = Date.now();
-const delayTime = 15 * 60 * 1000; // 10 minutes
+const delayTime = 20 * 60 * 1000; // 20 minutes
 
 // Function to update active time
 function updateActiveTime() {
@@ -70,7 +70,7 @@ document.addEventListener("visibilitychange", updateActiveTime);
 
 // Easter Egg function
 function activateEasterEgg() {
-    alert("ORB ORB ORB ORB, ORB ORB ORB ORB ORB Gratuluji nasel jso easterEgg!");
+    alert("ORB ORB ORB ORB, ORB ORB ORB ORB ORB Gratuluji nasel jsi easterEgg!");
     // You can replace this with animations, sounds, or secret messages
 }
 

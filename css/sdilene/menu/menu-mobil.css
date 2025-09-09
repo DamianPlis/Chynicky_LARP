@@ -135,3 +135,18 @@ nav {
 .side-menu a:hover {
     background: darkgray;
 }
+
+/* Styl pro dark light tlacitko */
+.darkXlight {
+    background-color: transparent;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: left;
+}
