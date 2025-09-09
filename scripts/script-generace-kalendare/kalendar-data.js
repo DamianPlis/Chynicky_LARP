@@ -1,19 +1,5 @@
 export const data = [
     {
-        nazev: "Návrat mocného (Již proběhlo)",
-        datum: [
-            "14.6.-",
-            "15.6.2025",
-        ],
-        organizatori: [
-            "Kvido Redl",
-            "Hugo Redl",
-            "Kristián Páca",
-        ],
-        obrazek: "https://burthgulash.github.io/Chynicky_LARP/larphlavni/img/Výstřižek.PNG",
-        link: "https://burthgulash.github.io/Chynicky_LARP/Navrat-mocneho/Navrat-mocneho.html"
-    },
-    {
         nazev: "List beze jmen",
         datum: [
             "10.10.-",
@@ -24,7 +10,7 @@ export const data = [
             "Hugo Redl",
             "Kristián Páca",
         ],
-        obrazek: "https://burthgulash.github.io/Chynicky_LARP/larphlavni/img/Výstřižek.PNG",
+        obrazek: "https://burthgulash.github.io/Chynicky_LARP/larphlavni/img/IMG_6984-photoaidcom-greyscale.jpeg",
         link: "#"
     },
     {
