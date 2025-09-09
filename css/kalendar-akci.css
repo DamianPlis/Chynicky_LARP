@@ -6,8 +6,12 @@
     --text-color-light: black;
 }
 
-p{
+p {
     margin: 0;
+}
+
+.kalendar-akci {
+    margin-top: 30px;
 }
 
 .kalendar-nazev {
@@ -17,10 +21,12 @@ p{
 }
 
 .kalendar-akci2 {
+    margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     font-family: "Roboto";
 }
+
 /*pro tlacitko na jinou akci*/
 .akce-tlacitko {
     background-color: transparent;
@@ -34,7 +40,7 @@ p{
 }
 
 .akce-tlacitko:hover {
-    background: rgb(86, 86, 86)!important;
+    background: rgb(86, 86, 86) !important;
     color: white;
 }
 
@@ -47,7 +53,9 @@ p{
 }
 
 /**/
-.ozveny-stinu2, .ozveny-stinu2-navrat, .ozveny-stinu2-coming-soon{
+.ozveny-stinu2,
+.ozveny-stinu2-navrat,
+.ozveny-stinu2-coming-soon {
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -96,7 +104,7 @@ p{
     }
 }
 */
-    
+
 
 .ozveny2-popis {
     flex: 1;
@@ -114,6 +122,7 @@ p{
 .datum-left {
     display: block;
 }
+
 .datum-left2 {
     display: inline-block;
 }
@@ -161,6 +170,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     padding-top: 100px;
 }
+
 /*nastaveni pro light a dark mode*/
 body.light {
     background-color: rgb(219, 219, 219);
@@ -210,7 +220,7 @@ nav {
 
 
 .side-menu {
-    position: fixed;  
+    position: fixed;
     right: -250px;
     width: 250px;
     height: 100%;
@@ -230,6 +240,7 @@ nav {
 .center {
     text-align: center;
 }
+
 /*styly pro submenumenu*/
 .menu-item-s-submenu {
     position: relative;
@@ -252,6 +263,7 @@ nav {
 .menu-item-s-submenu:hover .submenu {
     display: flex;
 }
+
 /* Styl pro dark light tlacitko */
 .darkXlight {
     background-color: transparent;
@@ -266,6 +278,7 @@ nav {
     display: block;
     text-align: left;
 }
+
 /* Styl pro odkazy v menu */
 .side-menu a {
     color: white;
@@ -273,23 +286,24 @@ nav {
     padding: 15px;
     display: block;
 }
+
 .side-menu a:hover {
     background: darkgray;
 }
 
 /* písmo */
-h4{
+h4 {
     font-style: oblique;
     margin-top: -7px;
 }
 
-h1{
+h1 {
     font-size: 33px;
     margin-top: 3px;
 }
 
-.italic{
-   font-style: italic;
+.italic {
+    font-style: italic;
 }
 
 /* obecne styly k stránce*/
@@ -301,11 +315,11 @@ h1{
 
 .popis-ozveny-stinu {
     text-align: center;
-    font-family: "Roboto" , Arial;
+    font-family: "Roboto", Arial;
 
 }
 
-a{
+a {
     color: aqua;
 
 }
@@ -329,6 +343,7 @@ a{
     .kalendar-akci2 {
         grid-template-columns: 1fr !important;
     }
+
     :popover-open {
         max-width: 85%;
         max-height: 85%;

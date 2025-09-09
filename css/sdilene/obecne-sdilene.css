@@ -89,3 +89,26 @@ h1 {
 a {
     color: aqua;
 }
+
+/*pro ty popovery ktere jsou zatim jen na kalendar akci*/
+
+:popover-open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    /* max-width: 70%;
+    max-height: 70%; */
+    background-color: rgba(0, 0, 0, 0.65);
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+@media only screen and (max-width: 800px) {
+    :popover-open {
+        max-width: 85%;
+        max-height: 85%;
+    }
+}
