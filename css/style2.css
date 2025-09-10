@@ -442,3 +442,9 @@ animation: slideInFromLeft 0.5s ease; /* Extended duration */
 .z-index.maly {
     z-index: 2;
 }
+
+/* pres hrebeny */
+
+.inline {
+    display: inline-block;
+}

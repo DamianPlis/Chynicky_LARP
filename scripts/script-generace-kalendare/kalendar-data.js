@@ -1,6 +1,6 @@
 export const data = [
     {
-        nazev: "List beze jmen",
+        nazev: "Přes hřebeny",
         datum: [
             "10.10.-",
             "12.10.2025"
@@ -8,10 +8,9 @@ export const data = [
         organizatori: [
             "Kvido Redl",
             "Hugo Redl",
-            "Kristián Páca",
         ],
         obrazek: "https://burthgulash.github.io/Chynicky_LARP/larphlavni/img/IMG_6984-photoaidcom-greyscale.jpeg",
-        link: "#"
+        link: "https://burthgulash.github.io/Chynicky_LARP/Pres.hrebeny/Pres.hrebeny.html"
     },
     {
         nazev: "Z popelu kalicha",
