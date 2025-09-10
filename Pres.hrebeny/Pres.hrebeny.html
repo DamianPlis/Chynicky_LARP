@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/sdilene/obecne-sdilene.css">
     <link rel="stylesheet" href="../css/sdilene/menu/menu.css">
     <link rel="stylesheet" href="../css/sdilene/info/info.css">
+    <link rel="stylesheet" href="../css/sdilene/obrazky.css">
     <link rel="shorcut icon" href="../larphlavni/favicon.svg">
     <title>Přes hřebeny</title>
 </head>
@@ -114,14 +115,12 @@
         <!---->
         <!---->
         <!---->
-        <div class="per-foto-obrazek">
         <div class="per-foto">
-            <img src="https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/O.S.2-img/Per9.jpg">
-            <img src="https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/O.S.2-img/Per10.jpg">
-            <img src="https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/O.S.2-img/Per11.jpg">
-            <img src="https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/O.S.2-img/Per12.jpg">
-            <img src="https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/O.S.2-img/Per13.jpg">
-        </div>
+            <img class="per-foto-obrazek" src="https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/O.S.2-img/Per9.jpg">
+            <img class="per-foto-obrazek" src="https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/O.S.2-img/Per10.jpg">
+            <img class="per-foto-obrazek" src="https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/O.S.2-img/Per11.jpg">
+            <img class="per-foto-obrazek" src="https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/O.S.2-img/Per12.jpg">
+            <img class="per-foto-obrazek" src="https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/O.S.2-img/Per13.jpg">
         </div>
         <h6>Ikony použity na tomto webu jsou od těchto tvůrců: Prettycons, Bercahicon, Vectors tank, Mayor icons,
             Kiranshastry a Freepic. Děkuji moc!
@@ -129,7 +128,15 @@
 
         <script src="../obecny.js"></script>
         <script src="https://burthgulash.github.io/Chynicky_LARP/generace-menu.js"></script>
-
+                <!--ten div je na ty zvetseny fotky a nejsou tam proto6e je tam da JavaScript-->
+        <div id="zvetsene" class="zvetsene hidden">
+            <span id="closeBtn" class="close">&times;</span>
+            <img id="zvetsene-img" src="" alt="Large view">
+            <div class="arrow left" id="prev">&#10094;</div>
+            <div class="arrow right" id="next">&#10095;</div>
+        </div>
+        <script type="module" src="../scripts/foto-swithing.js"></script>
 </body>
 
 </html>
+

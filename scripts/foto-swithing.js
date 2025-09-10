@@ -164,7 +164,7 @@ function findJpgImage(index) {
     if (match) {
         foundJpgImage = match.src;
     } else {
-        console.error("No match found for:", previewFilename, "or something else went wrong. showing the webp version");
+        console.warn("No match found for:", previewFilename, "or something else went wrong. showing the webp version");
         foundJpgImage = imgWebp; // fallback to .webp
     }
     return foundJpgImage;
