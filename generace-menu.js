@@ -3,7 +3,7 @@ document.querySelector("#sideMenu").innerHTML = `
 <div class="menu-item-s-submenu">
     <a href="https://burthgulash.github.io/Chynicky_LARP/larphlavni/index.html" class="ma-submenu" onclick="toggleMenu()">Kalendář akcí</a>
     <div class="submenu">
-        <a href="https://burthgulash.github.io/Chynicky_LARP/Pres.hrebeny/pres-hrebeny.html" onclick="toggleMenu()">Přes hřebeny</a>
+        <a href="https://burthgulash.github.io/Chynicky_LARP/Pres.hrebeny/Pres.hrebeny.html" onclick="toggleMenu()">Přes hřebeny</a>
     </div>
 </div>
 <a href="https://burthgulash.github.io/Chynicky_LARP/O%20nas/O%20nás.html" onclick="toggleMenu()">O nás</a>
