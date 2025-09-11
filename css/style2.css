@@ -218,6 +218,7 @@ h1{
 }
 
 .per-foto img {
+    position: relative;
     width: auto; /* Umožní přizpůsobit šířku */
     max-width: 300px; /* Nastaví maximální šířku obrázku */
     height: auto; /* Zachová poměr stran */
