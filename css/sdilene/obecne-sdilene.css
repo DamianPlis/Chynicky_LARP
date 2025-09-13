@@ -33,6 +33,17 @@ body.dark {
     text-align: center;
 }
 
+button {
+    background-color: hsl(0, 0%, 42%);
+    padding: 3px 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 52%);
+}
+
 /*RŮZNÉ STYLY PRO TEXT/PISMO MOŽNA SMAZAT NEBO ZMĚNIT*/
 /*RŮZNÉ STYLY PRO TEXT/PISMO MOŽNA SMAZAT NEBO ZMĚNIT*/
 /*RŮZNÉ STYLY PRO TEXT/PISMO MOŽNA SMAZAT NEBO ZMĚNIT*/
@@ -93,4 +104,31 @@ a {
 /* skibidi ikony*/
 .info0 {
     width: 100%;
+}
+
+/*pro ty popovery ktere jsou zatim jen na kalendar akci*/
+
+:popover-open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    /* max-width: 70%;
+    max-height: 70%; */
+    background-color: rgba(0, 0, 0, 0.65);
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+@media only screen and (max-width: 800px) {
+    :popover-open {
+        max-width: 85%;
+        max-height: 85%;
+    }
+}
+
+.show {
+    display: block !important;
 }

@@ -19,36 +19,38 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
+
 @media only screen and (max-width: 650px) {
     .info {
         grid-template-columns: 1fr 1fr;
     }
 }
+
 @media only screen and (max-width: 500px) {
     .info {
         grid-template-columns: 1fr;
     }
 }
 
-.icons h1{
+.icons h1 {
     flex: 1;
     padding: 10xp;
     text-align: center;
 }
 
-.worker{
+.worker {
     display: flex;
     justify-content: center;
     gap: 20px;
     height: 100px;
- }
+}
 
-.icons{
+.icons {
     display: flex;
     justify-content: space-between;
- }
+}
 
-.icons img{
+.icons img {
     width: 100px;
     padding: 10px;
     justify-content: center;
@@ -56,13 +58,13 @@
     margin-left: 10%;
 }
 
-.icons h2{
+.icons h2 {
     flex: 1;
     padding: 10xp;
     text-align: center;
 }
 
-.icons h3{
+.icons h3 {
     flex: 1;
     padding: 10xp;
     text-align: center;
@@ -74,7 +76,8 @@
 
 /*pro o nas*/
 
-.cepka2 h3,.organizatori2 h3 {
+.cepka2 h3,
+.organizatori2 h3 {
     margin-left: 7px;
     margin-right: 7px;
 }
@@ -90,12 +93,12 @@
     margin: 5px 10px 5px 10px;
 }
 
-.cepka{
+.cepka {
     display: flex;
     flex-direction: column;
 }
 
-.cepka2{
+.cepka2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 5px 10px 5px 10px;
@@ -105,29 +108,50 @@
     width: 150px;
 }
 
-.foto2{
+.foto2 {
     height: 158px;
 }
 
 @media only screen and (max-width: 500px) {
-    .cepka2{
+    .cepka2 {
         display: grid;
         grid-template-columns: 1fr;
-    } 
+    }
+
     .organizatori2 {
         display: grid;
         grid-template-columns: 1fr;
     }
-    .foto, .foto2 {
+
+    .foto,
+    .foto2 {
         width: 50% !important;
         height: auto;
     }
 }
 
 @media only screen and (min-width: 1400px) {
-    .foto,.foto2 {
+
+    .foto,
+    .foto2 {
         width: 40% !important;
         height: auto;
     }
 }
- 
+
+/* mini map */
+.mini-map {
+    width: 100%;
+    height: 40%;
+    display: none;
+}
+
+#toggle-minimap {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-minimap-container {
+    display: flex;
+    justify-content: center;
+}
