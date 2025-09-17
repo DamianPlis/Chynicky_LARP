@@ -1,7 +1,8 @@
 :root {
     color-scheme: dark light;
-    --background-color-dark: rgb(10, 10, 10);
-    --background-color-light: rgb(219, 219, 219);
+    --background-color-dark: hsl(0, 0%, 4%);
+    --background-color-light: hsl(0, 0%, 86%);
+    --background-color-dark-accent: hsl(0, 0%, 8%);
     --text-color-dark: white;
     --text-color-light: black;
 }
