@@ -31,13 +31,33 @@ btn.addEventListener("click", () => {
 function applyTheme(theme) {
     document.body.classList.remove("dark", "light");
     const akceTlacitko = document.querySelectorAll(".akce-tlacitko");
+    const akceContainer = document.querySelectorAll(".akce-container")
+
+    // info card clases
+    const info = document.querySelectorAll(".info2")
+    const info21 = document.querySelectorAll(".info2-1")
+    const info22 = document.querySelectorAll(".info2-2")
     if (theme === "dark") {
         document.body.classList.toggle("dark");
         // for each button change the class + change random linear gradient
         akceTlacitko.forEach((button) => {
-            button.style.setProperty("background", "linear-gradient(var(--background-color-dark)) padding-box,linear-gradient(-45deg, rgb(66, 66, 66), rgb(110, 110, 110)) border-box")
+            button.style.setProperty("background", "linear-gradient(var(--background-color-dark-accent)) padding-box,linear-gradient(-45deg, rgb(66, 66, 66), rgb(110, 110, 110)) border-box")
             button.classList.remove("akce-tlacitko-light");
             button.classList.add("akce-tlacitko-dark");
+        });
+        // for each akce change the accent color
+        akceContainer.forEach(akce => {
+            akce.classList.remove("akce-container-light")
+        });
+        // loop over multiple info card classes
+        info.forEach(card => {
+            card.classList.remove("info2-light")
+        });
+        info21.forEach(card => {
+            card.classList.remove("info2-1-light")
+        });
+        info22.forEach(card => {
+            card.classList.remove("info2-2-light")
         });
         // Change the background image of the navBar
         navBar.style.setProperty("background-image", "url(https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Nav.panel/temný%20les%203.jpg")
@@ -45,11 +65,25 @@ function applyTheme(theme) {
     } else if (theme === "light") {
         // for each button change the class + change random linear gradient
         akceTlacitko.forEach(button => {
-            button.style.setProperty("background", "linear-gradient(var(--background-color-light)) padding-box,linear-gradient(-45deg, rgb(66, 66, 66), rgb(110, 110, 110)) border-box")
+            button.style.setProperty("background", "linear-gradient(var(--background-color-light-accent)) padding-box,linear-gradient(-45deg, rgb(66, 66, 66), rgb(110, 110, 110)) border-box")
             button.classList.remove("akce-tlacitko-dark");
             button.classList.add("akce-tlacitko-light");
         })
+        // for each akce change the accent color
+        akceContainer.forEach(akce => {
+            akce.classList.add("akce-container-light")
+        });
         document.body.classList.toggle("light");
+        // loop over multiple info card classes
+        info.forEach(card => {
+            card.classList.add("info2-light")
+        });
+        info21.forEach(card => {
+            card.classList.add("info2-1-light")
+        });
+        info22.forEach(card => {
+            card.classList.add("info2-2-light")
+        });
         // Change the background image of the navBar
         navBar.style.setProperty("background-image", "url(https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Nav.panel/IMG_6357.jpg")
         updateIcons();

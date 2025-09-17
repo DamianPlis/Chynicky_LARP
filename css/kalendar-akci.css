@@ -47,9 +47,7 @@ p {
 }
 
 /**/
-.ozveny-stinu2,
-.ozveny-stinu2-navrat,
-.ozveny-stinu2-coming-soon {
+.akce-container {
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -57,6 +55,11 @@ p {
     border-radius: 15px;
     padding: 1rem;
 }
+
+.akce-container-light {
+    background-color: var(--background-color-light-accent) !important;
+}
+
 
 .organizatori-div {
     display: flex;

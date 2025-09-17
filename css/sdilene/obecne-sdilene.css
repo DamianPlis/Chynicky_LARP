@@ -2,6 +2,7 @@
     color-scheme: dark light;
     --background-color-dark: hsl(0, 0%, 4%);
     --background-color-light: hsl(0, 0%, 86%);
+    --background-color-light-accent: hsl(0, 0%, 96%);
     --background-color-dark-accent: hsl(0, 0%, 8%);
     --text-color-dark: white;
     --text-color-light: black;

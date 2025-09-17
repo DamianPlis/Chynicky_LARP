@@ -28,7 +28,7 @@ data.forEach((data, index) => {
     `
     });
     htmlRendered += `
-<div class="ozveny-stinu2-navrat">
+<div class="akce-container">
     <div class="ozveny2-popis">
         <a href="${data.link}">
             <button id="akce-tlacitko" class="akce-tlacitko">${data.nazev}</button>
