@@ -38,6 +38,7 @@ button {
     padding: 3px 8px;
     border: none;
     border-radius: 5px;
+    color: white;
 }
 
 button:hover {
@@ -129,6 +130,11 @@ a {
     }
 }
 
+/**/
 .show {
     display: block !important;
+}
+
+img {
+    user-select: none;
 }

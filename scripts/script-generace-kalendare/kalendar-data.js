@@ -8,6 +8,7 @@ export const data = [
         organizatori: [
             "Kvido Redl",
             "Hugo Redl",
+            "Julie Redlová",
         ],
         obrazek: "https://burthgulash.github.io/Chynicky_LARP/larphlavni/img/IMG_6984-photoaidcom-greyscale.jpeg",
         link: "https://burthgulash.github.io/Chynicky_LARP/Pres.hrebeny/Pres.hrebeny.html"

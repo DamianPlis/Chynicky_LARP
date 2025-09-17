@@ -36,7 +36,7 @@ function updatePadding() {
 }
 
 // Run on page load & window resize
-window.addEventListener("load", updatePadding);
+window.addEventListener("responsivniNav", updatePadding) // je to k tomu aby responsivni nav mohl se nacist a az pak padding podle nej
 window.addEventListener("resize", updatePadding);
 
 /* */
@@ -78,8 +78,10 @@ function activateEasterEgg() {
 // pro minimap
 const minimapBtn = document.getElementById("toggle-minimap");
 
+// just check if the btn exists on the page to prevent errors on pages without the btn
+if (minimapBtn) {
 minimapBtn.addEventListener("click", toggleMinimap);
-
+}
 function toggleMinimap() {
     const miniMap = document.getElementById("mini-map");
     miniMap.classList.toggle("show")
