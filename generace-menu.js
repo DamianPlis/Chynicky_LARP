@@ -20,3 +20,4 @@ document.querySelector("#sideMenu").innerHTML = `
 </div>
 <button class="darkXlight" id="button-theme-switch">🌗</button>
 `
+window.dispatchEvent(new Event("side-menu"))
