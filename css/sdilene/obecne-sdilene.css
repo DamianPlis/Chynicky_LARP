@@ -98,7 +98,8 @@ h1 {
     line-height: 1;
 }
 
-a {
+a,
+.link {
     color: aqua;
 }
 
@@ -137,4 +138,8 @@ a {
 
 img {
     user-select: none;
+}
+
+.disabled {
+    cursor: not-allowed;
 }
