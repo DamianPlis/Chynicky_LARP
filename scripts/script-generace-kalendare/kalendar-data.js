@@ -24,6 +24,6 @@ export const data = [
             "Kristián Páca",
         ],
         obrazek: "https://burthgulash.github.io/Chynicky_LARP/larphlavni/img/questionmark2.2.png",
-        link: "#"
+        link: "https://burthgulash.github.io/Chynicky_LARP/Z.Popelu.kalicha/Z.Popelu.kalicha.html"
     }
 ]

@@ -23,6 +23,8 @@ function adjustNav() {
     const smallTextElement = document.querySelectorAll(".nadpis")[1]
 
     if (checkOverlap(titleElement) || checkOverlap(smallTextElement)) {
+        const menuBtn = document.querySelector(".menu")
+        const meceSrc = menuBtn.dataset.src
         nav.innerHTML = `
         <div class="divny-flex-menu-container">
             <div class="divny-flex-menu-nadpis-a-mece">
@@ -31,7 +33,7 @@ function adjustNav() {
                 </div>
                 <div class="divny-flex-menu-mece-container">
                     <img class="divny-flex-menu-mece-img menu"
-                        src="../../kvido html-img/foto/Nav.panel/tri mece final final.png" height="100"
+                        src="${meceSrc}" height="100"
                         alt="Klikni na Hamburger Menu pro zobrazení nabídky" onclick="toggleMenu()">
                 </div>
             </div>
