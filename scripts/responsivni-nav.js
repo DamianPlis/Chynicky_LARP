@@ -23,7 +23,7 @@ function adjustNav() {
     const smallTextElement = document.querySelectorAll(".nadpis")[1]
 
     if (checkOverlap(titleElement) || checkOverlap(smallTextElement)) {
-        const menuBtn = document.querySelector(".menu")
+        const menuBtn = document.querySelector(".menu-btn")
         const meceSrc = menuBtn.dataset.src
         nav.innerHTML = `
         <div class="divny-flex-menu-container">
