@@ -1,18 +1,25 @@
 .per-foto {
-    display: flex; 
-    justify-content: center; 
-    gap: 10px; 
-    flex-wrap: wrap; 
-    max-width: 90%; 
-    margin: 0 auto; 
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .per-foto img {
-    width: auto; /* Umožní přizpůsobit šířku */
-    max-width: 300px; /* Nastaví maximální šířku obrázku */
-    height: auto; /* Zachová poměr stran */
-    object-fit: contain; /* Zajistí správné zobrazení bez deformace */
-    border-radius: 10px; /* Zaoblení rohů */
+  width: auto;
+  /* Umožní přizpůsobit šířku */
+  max-width: 300px;
+  /* Nastaví maximální šířku obrázku */
+  height: auto;
+  /* Zachová poměr stran */
+  object-fit: contain;
+  /* Zajistí správné zobrazení bez deformace */
+  border-radius: 10px;
+  /* Zaoblení rohů */
+  cursor: pointer;
+  /*ukáže pacičku */
 }
 
 /*pro zvetsene obrazky*/
@@ -23,7 +30,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.9);
+  background: rgba(0, 0, 0, 0.9);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,33 +80,37 @@
 
 /* Animation: Slide in from the right */
 @keyframes slideInFromRight {
-    from {
-      transform: translateX(100%);
-      opacity: 0.5;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  from {
+    transform: translateX(100%);
+    opacity: 0.5;
   }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
 /* Animation: Slide in from the left */
 @keyframes slideInFromLeft {
-from {
+  from {
     transform: translateX(-100%);
     opacity: 0.5;
-}
-to {
+  }
+
+  to {
     transform: translateX(0);
     opacity: 1;
-}
+  }
 }
 
 /* Add these classes to the image temporarily */
 .slide-left {
-animation: slideInFromRight 0.5s ease; /* Extended duration */
+  animation: slideInFromRight 0.5s ease;
+  /* Extended duration */
 }
 
 .slide-right {
-animation: slideInFromLeft 0.5s ease; /* Extended duration */
+  animation: slideInFromLeft 0.5s ease;
+  /* Extended duration */
 }

@@ -12,7 +12,22 @@
     text-align: center;
     margin: 7px 15px 7px 15px;
     width: 100%;
+    gap: 1rem;
 }
+
+.info2,
+.info2-1,
+.info2-2 {
+    border-radius: 15px;
+    background-color: var(--background-color-accent);
+    padding: 1em;
+}
+
+/* .info2-light,
+.info2-1-light,
+.info2-2-light {
+    background-color: var(--background-color-light-accent);
+} */
 
 @media only screen and (min-width: 1300px) {
     .info {

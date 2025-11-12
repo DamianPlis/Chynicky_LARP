@@ -13,22 +13,25 @@ p {
 }
 
 .kalendar-akci2 {
+    margin: 5px;
     margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 3rem;
     font-family: "Roboto";
 }
 
 /*pro tlacitko na jinou akci*/
 .akce-tlacitko {
     background-color: transparent;
-    border: 2px solid transparent;
+    border: 2px solid rgb(86, 86, 86);
     border-radius: 2px;
     padding: 5px 30px 5px 30px;
     transition: var(--background-color-dark) 0.15s, var(--background-color-light) 0.15s;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
+    color: var(--text-clr);
 }
 
 .akce-tlacitko:hover {
@@ -45,12 +48,13 @@ p {
 }
 
 /**/
-.ozveny-stinu2,
-.ozveny-stinu2-navrat,
-.ozveny-stinu2-coming-soon {
+.akce-container {
     display: flex;
     width: 100%;
     flex-direction: row;
+    background-color: var(--bg-accent-clr) !important;
+    border-radius: 15px;
+    padding: 1rem;
 }
 
 .organizatori-div {
@@ -148,22 +152,6 @@ p {
     align-items: center;
 }
 
-
-/* písmo */
-h4 {
-    font-style: oblique;
-    margin-top: -7px;
-}
-
-h1 {
-    font-size: 33px;
-    margin-top: 3px;
-}
-
-.italic {
-    font-style: italic;
-}
-
 /* obecne styly k stránce*/
 
 .ozveny-stinu-link {
@@ -174,11 +162,6 @@ h1 {
 .popis-ozveny-stinu {
     text-align: center;
     font-family: "Roboto", Arial;
-
-}
-
-a {
-    color: aqua;
 
 }
 

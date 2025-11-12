@@ -1,17 +1,25 @@
 :root {
     color-scheme: dark light;
-    --background-color-dark: rgb(10, 10, 10);
-    --background-color-light: rgb(219, 219, 219);
+    --background-color-dark: hsl(0, 0%, 4%);
+    --background-color-light: hsl(0, 0%, 86%);
+    --background-color-light-accent: hsl(0, 0%, 92%);
+    --background-color-dark-accent: hsl(0, 0%, 10%);
     --text-color-dark: white;
     --text-color-light: black;
+    --bg-clr: hsl(0, 0%, 4%);
+    --bg-accent-clr: hsl(0, 0%, 14%);
+    --text-clr: white;
+    --nav-img: url(https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Nav.panel/temný%20les%203.jpg);
+    --nav-img-light: url(https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Nav.panel/IMG_6357.jpg);
+    --nav-img-dark: url(https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Nav.panel/temný%20les%203.jpg);
 }
 
 /* Obecné nastavení stránky */
 body {
     /* background-color: light-dark(rgb(219, 219, 219),rgb(10, 10, 10)); */
     /* color: light-dark(white,black); */
-    background-color: var(--background-color-dark);
-    color: var(--text-color-dark);
+    background-color: var(--bg-clr);
+    color: var(--text-clr);
     width: 100%;
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
@@ -20,13 +28,17 @@ body {
 
 /*nastaveni pro light a dark mode*/
 body.light {
-    background-color: var(--background-color-light);
-    color: var(--text-color-light);
+    --bg-clr: var(--background-color-light);
+    --text-clr: var(--text-color-light);
+    --bg-accent-clr: var(--background-color-light-accent);
+    --nav-img: var(--nav-img-light);
 }
 
 body.dark {
-    background-color: var(--background-color-dark);
-    color: var(--text-color-dark);
+    --bg-clr: var(--background-color-dark);
+    --text-clr: var(--text-color-dark);
+    --bg-accent-clr: var(--background-color-dark-accent);
+    --nav-img: var(--nav-img-dark);
 }
 
 .center {
