@@ -1,10 +1,16 @@
 // pro side menu
 function toggleMenu() {
     const sideMenu = document.getElementById("sideMenu");
-    const menuButton = document.querySelector(".menu");
+    const menuBtn = document.querySelector(".menu-btn")
+    if (sideMenu.classList.contains("side-menu-open")) {
+        sideMenu.setAttribute("inert", "")
+    } else {
+        sideMenu.removeAttribute("inert", "")
+    }
 
     sideMenu.classList.toggle("side-menu-open");
     //  menuButton.classList.toggle("menu-open");
+
 
     // Add or remove the outside click listener depending on menu state
     if (sideMenu.classList.contains("side-menu-open")) {
@@ -17,15 +23,13 @@ function toggleMenu() {
 // Move this function OUTSIDE toggleMenu!
 function menuOutsideClick(event) {
     const sideMenu = document.getElementById("sideMenu");
-    const menuButton = document.querySelector(".menu");
-    if (!sideMenu.contains(event.target) && !menuButton.contains(event.target)) {
+    if (!sideMenu.contains(event.target) && !menuBtn.contains(event.target)/*neodstranovat menu.contains(event.target) pak to z nejakyho duvodu nefunguje */) {
         // Clicked outside the menu and button, so close the menu
         sideMenu.classList.remove("side-menu-open");
-        menuButton.classList.remove("menu-open");
+        //menuButton.classList.remove("menu-open");
         document.removeEventListener("click", menuOutsideClick);
     }
 }
-
 /* */
 
 // pro nav bar

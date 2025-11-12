@@ -10,10 +10,12 @@ data.forEach((data, index) => {
         datumLongerThan1 = true
     }*/
     let htmlRenderedOrganizatori = "";
+    let jizBrzycode = ""
     data.organizatori.forEach(organizator => {
         if (organizator === "Již brzy") {
             htmlRenderedOrganizatori += `
             <p class="organizatori-text">${organizator}</p>`
+            jizBrzycode = `id=icon-img data-name="questionmark"`
             return
         }
         htmlRenderedOrganizatori += `
@@ -46,11 +48,11 @@ data.forEach((data, index) => {
             ${htmlRenderedOrganizatori}
         </div>
     </div>
-    <div class="ozveny2-img">
+    <div class="ozveny2-img" ${jizBrzycode}>
         <img style="width: 100%; justify-content: center; margin: 5px 0 5px 0;" src="${data.obrazek}">
     </div>
 </div>
-`
+`// TODO: udelat qestion mark light mod
 
     document.querySelector(".kalendar-akci2").innerHTML = htmlRendered
 });

@@ -4,6 +4,7 @@
 .info2-1,
 .info2-2 {
     grid-template-columns: 1fr;
+    padding: 1em;
 }
 
 /*DDOSLOVA K CEMU JSOU TYHLE STYLY JA NEVIM ALE NECHAM JE TADY*/

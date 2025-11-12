@@ -8,8 +8,15 @@ nav {
     margin-top: 0px;
     top: 0;
     left: 0;
-    background-image: url(https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Nav.panel/temný%20les%203.jpg);
+    background-image: var(--nav-img);
 
+}
+
+nav svg {
+    width: 1em;
+    height: 1em;
+    fill: white;
+    transition: transform 300ms ease;
 }
 
 /* poloha */
@@ -82,8 +89,13 @@ nav {
     transition: opacity 0.15s;
 }
 
-.menu-item-s-submenu:hover .submenu {
+.menu-sipka:hover .submenu {
     display: flex;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
 }
 
 /* Styl pro dark light tlacitko */
@@ -102,13 +114,16 @@ nav {
 }
 
 /* Styl pro odkazy v menu */
-.side-menu a {
+.side-menu a,
+.side-menu button {
     color: white;
     text-decoration: none;
     padding: 15px;
     display: block;
+    border-radius: 0px;
 }
 
-.side-menu a:hover {
+.side-menu a:hover,
+.darkXlight:hover {
     background: darkgray;
 }
