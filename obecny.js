@@ -23,6 +23,7 @@ function toggleMenu() {
 // Move this function OUTSIDE toggleMenu!
 function menuOutsideClick(event) {
     const sideMenu = document.getElementById("sideMenu");
+    const menuBtn = document.querySelector(".menu-btn")
     if (!sideMenu.contains(event.target) && !menuBtn.contains(event.target)/*neodstranovat menu.contains(event.target) pak to z nejakyho duvodu nefunguje */) {
         // Clicked outside the menu and button, so close the menu
         sideMenu.classList.remove("side-menu-open");

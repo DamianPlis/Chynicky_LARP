@@ -19,7 +19,7 @@
 .info2-1,
 .info2-2 {
     border-radius: 15px;
-    background-color: var(--bg-accent-clr);
+    background-color: var(--background-color-accent);
     padding: 1em;
 }
 
