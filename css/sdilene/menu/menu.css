@@ -89,6 +89,10 @@ nav svg {
     transition: opacity 0.15s;
 }
 
+.menu-item-s-submenu:hover .submenu {
+    display: flex;
+}
+
 .menu-sipka:hover .submenu {
     display: flex;
 }

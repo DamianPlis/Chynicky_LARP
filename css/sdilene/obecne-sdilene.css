@@ -155,3 +155,7 @@ img {
 .disabled {
     cursor: not-allowed;
 }
+
+.z-index-maly {
+    z-index: -1000;
+}
