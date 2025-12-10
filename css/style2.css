@@ -449,3 +449,7 @@ animation: slideInFromLeft 0.5s ease; /* Extended duration */
 .inline {
     display: inline-block;
 }
+
+.pravidla{
+    color: red;
+}
