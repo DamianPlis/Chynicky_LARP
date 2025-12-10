@@ -153,7 +153,7 @@ a,
     }
 }
 
-/**/
+/*Oddělovátko Polski*/
 .show {
     display: block !important;
 }
@@ -168,4 +168,10 @@ img {
 
 .z-index-maly {
     z-index: -1000;
+}
+
+/*Stránka akcí*/
+
+.pravidla{
+    color: hsl(0, 100%, 43%);
 }
