@@ -117,10 +117,14 @@ nav svg {
     text-align: left;
 }
 
+.darkXlight img {
+    height: 50px;
+}
+
 /* Styl pro odkazy v menu */
 .side-menu a,
 .side-menu button {
-    color: white;
+    color: white !important;
     text-decoration: none;
     padding: 15px;
     display: block;

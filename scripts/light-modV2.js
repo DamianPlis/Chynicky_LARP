@@ -46,6 +46,7 @@ function applyTheme(theme) {
 
         updateIcons();
     }
+    updateThemeIcon()
 }
 
 function updateIcons() {
@@ -76,6 +77,20 @@ function updateIcons() {
             image.src = `https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Ikony-img/${name}.${imgFormat}`;
         }
     });
+}
+
+function updateThemeIcon() {
+    const themebtn = document.getElementById("button-theme-switch")
+
+    if (document.body.classList.contains("dark")) {
+        themebtn.innerHTML = `
+            <img src="../kvido html-img/foto/Ikony-img/slunce-icon2.png">
+        `
+    } else {
+        themebtn.innerHTML = `
+            <img style="margin-left: 8px;" src="../kvido html-img/foto/Ikony-img/Mesic-icon2.png">
+        `
+    }
 }
 
 

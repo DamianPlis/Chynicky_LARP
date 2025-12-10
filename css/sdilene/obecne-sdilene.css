@@ -110,10 +110,20 @@ h1 {
     line-height: 1;
 }
 
+body.light a{
+    color: #36c;
+}
+
+body.light .link{
+    color: #36c;
+}
+
 a,
 .link {
-    color: aqua;
+    color: #00ffff ;
 }
+
+
 
 /* skibidi ikony*/
 .info0 {
