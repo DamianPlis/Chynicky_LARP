@@ -32,7 +32,7 @@ function adjustNav() {
                     <h1 class="">${title}</h1>
                 </div>
                 <div class="divny-flex-menu-mece-container">
-                    <img class="divny-flex-menu-mece-img menu"
+                    <img class="divny-flex-menu-mece-img menu menu-btn"
                         src="${meceSrc}" height="100"
                         alt="Klikni na Hamburger Menu pro zobrazení nabídky" onclick="toggleMenu()">
                 </div>
