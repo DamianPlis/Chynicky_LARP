@@ -150,3 +150,8 @@ nav {
     display: block;
     text-align: left;
 }
+
+/*pro novy the toogle s obrazkem*/
+.darkXlight img {
+    height: 50px;
+}
