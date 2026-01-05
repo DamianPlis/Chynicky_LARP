@@ -13,7 +13,7 @@ iframe.onload = () => {
 
 // 2. Receive the theme and apply it
 window.addEventListener("message", (event) => {
-    console.log("Mesage", event)
+    // console.log("Mesage", event)
     if (event.origin !== "https://burthgulash.github.io") return;
     if (event.data?.type === "theme") {
         applyTheme(event.data.value);

@@ -14,6 +14,10 @@
     --nav-img-dark: url(https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Nav.panel/temný%20les%203.jpg);
 }
 
+*{
+    box-sizing: border-box;
+}
+
 /* Obecné nastavení stránky */
 body {
     /* background-color: light-dark(rgb(219, 219, 219),rgb(10, 10, 10)); */
