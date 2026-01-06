@@ -89,7 +89,11 @@ nav svg {
     transition: opacity 0.15s;
 }
 
-.menu-item-s-submenu:hover .submenu {
+/* .menu-item-s-submenu svg:hover .menu-item-s-submenu > .submenu {
+    display: flex;
+} */
+
+.menu-link:hover + .submenu {
     display: flex;
 }
 
