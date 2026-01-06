@@ -20,9 +20,7 @@ export const data = [
             ""
         ],
         organizatori: [
-            "již brzy",
-            "již brzy",
-            "již brzy",
+            "Již brzy",
         ],
         obrazek: "https://burthgulash.github.io/Chynicky_LARP/larphlavni/img/questionmark2.2.png",
         link: "https://burthgulash.github.io/Chynicky_LARP/Pres.hrebeny/Pres.hrebeny.html"
