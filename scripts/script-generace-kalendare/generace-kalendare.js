@@ -15,7 +15,7 @@ data.forEach((data, index) => {
         if (organizator === "Již brzy") {
             htmlRenderedOrganizatori += `
             <p class="organizatori-text">${organizator}</p>`
-            jizBrzycode = `id=icon-img data-name="questionmark"`
+            jizBrzycode = `id=icon-img data-name="questionmark2.2"`
             return
         }
         htmlRenderedOrganizatori += `
@@ -48,8 +48,8 @@ data.forEach((data, index) => {
             ${htmlRenderedOrganizatori}
         </div>
     </div>
-    <div class="ozveny2-img" ${jizBrzycode}>
-        <img style="width: 100%; justify-content: center; margin: 5px 0 5px 0;" src="${data.obrazek}">
+    <div class="ozveny2-img">
+        <img style="width: 100%; justify-content: center; margin: 5px 0 5px 0;" src="${data.obrazek}" ${jizBrzycode}>
     </div>
 </div>
 `// TODO: udelat qestion mark light mod

@@ -103,6 +103,8 @@ nav {
     right: 0;
 }
 
+/*styly pro submenumenu*/
+
 .menu-item-s-submenu {
     position: relative;
     display: flex;
@@ -117,11 +119,55 @@ nav {
     display: none;
     flex-direction: column;
     padding-left: 20px;
-    margin-top: 5px;
+    margin-top: 0px;
+    transition: opacity 0.15s;
 }
 
-.menu-item-s-submenu:hover .submenu {
+.menu-item-s-submenu.submenu-open .submenu {
     display: flex;
+}
+
+/* .menu-item-s-submenu:hover .submenu {
+    display: flex;
+} */
+
+.menu-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-link a {
+    flex: 1;
+}
+
+.menu-sipka {
+    --pad: 0.75em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 45%;
+    padding: var(--pad);
+    width: calc(1em + (var(--pad)*2));
+    height: calc(1em + (var(--pad)*2));
+    transform: rotate(90deg);
+    transition: transform 300ms ease-in-out;
+}
+
+.menu-sipka:hover {
+    background: inherit;
+    /* odsranit hover backgorundd manualne pro mobily */
+}
+
+.menu-item-s-submenu.submenu-open .menu-sipka {
+    transform: rotate(0deg);
+}
+
+/* keep `.submenu-open` behavior handled via parent selector above */
+
+.menu-item {
+    display: flex;
+    align-items: center;
 }
 
 /* Styl pro odkazy v menu */

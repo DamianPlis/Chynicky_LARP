@@ -68,6 +68,7 @@ function updateIcons() {
         }
     }
     document.querySelectorAll("#icon-img").forEach(image => {
+        if (!image) return;
         const imgFormat = getImageFormat(image.src) // Get the image format is correct
         const name = image.dataset.name;
         if (isLight) {
