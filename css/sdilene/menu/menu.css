@@ -90,27 +90,11 @@ nav svg {
     transition: opacity 0.15s;
 }
 
-/* .menu-item-s-submenu svg:hover .menu-item-s-submenu > .submenu {
-    display: flex;
-} */
-
-.menu-link:hover + .submenu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 45%;
-    padding: var(--pad);
-    width: calc(1em + (var(--pad)*2));
-    height: calc(1em + (var(--pad)*2));
-    transform: rotate(90deg);
-    transition: transform 300ms ease-in-out;
-}
-
 .menu-sipka:hover {
     transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
 }
 
-.menu-item-s-submenu:has(.menu-sipka:hover) .submenu,
 .menu-item-s-submenu.submenu-open .submenu,
 .submenu:hover {
     display: flex;
