@@ -64,6 +64,7 @@ arrows.forEach(arrow => {
     })
     arrow.addEventListener("mouseleave", (e) => {
         setTimeout(() => {
+            if (submenu.matches(":hover")) return;
             menuItem.classList.remove("submenu-open")
         }, 200)
     })

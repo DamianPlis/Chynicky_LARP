@@ -9,7 +9,7 @@ export const data = [
         organizatori: [
             "Kvido Redl",
             "Hugo Redl",
-            "Kristián Páca",
+            "Kristian Páca",
         ],
         obrazek: "https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/Z.Popelu.kalicha-foto/Prapor-chatgpt.png",
         link: "https://burthgulash.github.io/Chynicky_LARP/Z.Popelu.kalicha/Z.Popelu.kalicha.html"

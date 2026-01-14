@@ -1,7 +1,7 @@
 /* Navigační menu */
 nav {
     position: fixed;
-    width: calc(100vw - 2rem);
+    width: 100%;
     padding: 1rem;
     /* height: 83px; */
     z-index: 5;
@@ -65,6 +65,33 @@ nav svg {
 
 .side-menu-open {
     right: 0;
+}
+
+.menu-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-sipka {
+    --pad: 0.75em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 45%;
+    padding: var(--pad);
+    width: calc(1em + (var(--pad)*2));
+    height: calc(1em + (var(--pad)*2));
+    transform: rotate(90deg);
+    transition: transform 300ms ease-in-out;
+}
+
+.menu-link a {
+    flex: 1;
+}
+
+.menu-item-s-submenu.submenu-open .menu-sipka {
+    transform: rotate(0deg);
 }
 
 .center {

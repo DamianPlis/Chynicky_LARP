@@ -1,7 +1,7 @@
 /* Navigační menu */
 nav {
     position: fixed;
-    width: calc(100vw - 2rem);
+    width: 100%;
     background-image: var(--nav-img);
     padding: 1rem;
     z-index: 5;
