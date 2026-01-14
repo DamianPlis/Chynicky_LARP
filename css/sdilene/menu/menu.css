@@ -16,7 +16,8 @@ nav svg {
     width: 1em;
     height: 1em;
     fill: white;
-    transition: transform 300ms ease;
+    transition: transform 300ms ease-in-out;
+    transition: background-color 150ms ease-in-out;
 }
 
 /* poloha */
@@ -85,7 +86,7 @@ nav svg {
     display: none;
     flex-direction: column;
     padding-left: 20px;
-    margin-top: 5px;
+    margin-top: 0px;
     transition: opacity 0.15s;
 }
 
@@ -95,9 +96,23 @@ nav svg {
 
 .menu-link:hover + .submenu {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 45%;
+    padding: var(--pad);
+    width: calc(1em + (var(--pad)*2));
+    height: calc(1em + (var(--pad)*2));
+    transform: rotate(90deg);
+    transition: transform 300ms ease-in-out;
 }
 
-.menu-sipka:hover .submenu {
+.menu-sipka:hover {
+    transform: rotate(0deg);
+}
+
+.menu-item-s-submenu:has(.menu-sipka:hover) .submenu,
+.menu-item-s-submenu.submenu-open .submenu,
+.submenu:hover {
     display: flex;
 }
 
@@ -136,6 +151,7 @@ nav svg {
 }
 
 .side-menu a:hover,
-.darkXlight:hover {
+.darkXlight:hover,
+.menu-sipka:hover {
     background: darkgray;
 }

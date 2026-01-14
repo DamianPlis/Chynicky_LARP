@@ -22,7 +22,7 @@ export const data = [
         organizatori: [
             "Již brzy",
         ],
-        obrazek: "https://burthgulash.github.io/Chynicky_LARP/larphlavni/img/questionmark2.2.png",
+        obrazek: "https://burthgulash.github.io/kvido html-img/foto/Ikony-img/questionmark2.2.png",
         link: "https://burthgulash.github.io/Chynicky_LARP/Pres.hrebeny/Pres.hrebeny.html"
     },
 ]
