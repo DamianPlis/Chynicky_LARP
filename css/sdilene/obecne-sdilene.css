@@ -177,7 +177,13 @@ img {
 /*Stránka akcí*/
 
 .pravidla{
-    color: hsl(0, 100%, 50%);
+    color: hsl(0, 0%, 100%);
+    padding: 1em;
+    background-color: var(--bg-accent-clr);
+}
+
+.prihlasit{
+    color:aqua
     padding: 1em;
     background-color: var(--bg-accent-clr);
 }
