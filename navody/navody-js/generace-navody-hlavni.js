@@ -37,14 +37,14 @@ data.forEach((data, index) => {
         </a>
         <div class="datumy">
             <div style="margin: 0 0 10px 0;">
-                <p class="datum-right">Datum :</p>
+                <p class="datum-right">Přibližné náklady :</p>
             </div>
             <div class="moznost">
                 ${htmlRenderedDatum}
             </div>
         </div>
         <div class="organizatori">
-            <p class="organizatori-text">Organizátoři :</p>
+            <p class="organizatori-text">Doba výroby:</p>
             ${htmlRenderedOrganizatori}
         </div>
     </div>
