@@ -14,7 +14,7 @@
     --nav-img-dark: url(https://burthgulash.github.io/Chynicky_LARP/kvido%20html-img/foto/Nav.panel/temný%20les%203.jpg);
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -114,17 +114,17 @@ h1 {
     line-height: 1;
 }
 
-body.light a{
+body.light a {
     color: #36c;
 }
 
-body.light .link{
+body.light .link {
     color: #36c;
 }
 
 a,
 .link {
-    color: #00ffff ;
+    color: #00ffff;
 }
 
 
@@ -176,14 +176,14 @@ img {
 
 /*Stránka akcí*/
 
-.pravidla{
-    color: hsl(0, 0%, 100%);
+.pravidla {
+    color: var(--text-clr);
     padding: 1em;
     background-color: var(--bg-accent-clr);
 }
 
-.prihlasit{
-    color:aqua
+.prihlasit {
+    color: aqua;
     padding: 1em;
-    font size: 7px
+    /* font-size: 7px nevim co zkousis to bz bylo extreme maly*/
 }
