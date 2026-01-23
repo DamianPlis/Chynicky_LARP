@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="cz">
+
+<head>
+    <script src="../responzivni-pro-pocitacV2.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shorcut icon" href="favicon.svg">
+    <title>Návody</title>
+    <link rel="stylesheet" href="../css/sdilene/menu/menu-mobil.css">
+    <link rel="stylesheet" href="../css/kalendar-akci.css">
+    <link rel="stylesheet" href="../css/sdilene/obecne-sdilene.css">
+    <link rel="stylesheet" href="../css/sdilene/menu/menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="pravo">
+
+            <div class="menu" onclick="toggleMenu()">
+                <img class="menu-btn" src="img/tri mece final final.png" height="100" alt="Menu">
+            </div>
+        </div>
+        <div class="center">
+            <div class="ozveny">
+                <h1 class="nadpis">Návody</h1>
+            </div>
+            <h4 class="nadpis">
+                Zde najdeš návody na zbaně, kostýmy, doplňky a cokoliv jiného.
+            </h4>
+        </div>
+
+        <div class="side-menu" id="sideMenu">
+            <div class="menu-item-s-submenu">
+                <div class="menu-link">
+                    <a href="https://burthgulash.github.io/Chynicky_LARP/larphlavni/index.html" class="ma-submenu"
+                        onclick="toggleMenu()">Kalendář akcí</a>
+                    <svg class="menu-sipka" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 640"><!--Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path
+                            d="M480 224C492.9 224 504.6 231.8 509.6 243.8C514.6 255.8 511.8 269.5 502.7 278.7L342.7 438.7C330.2 451.2 309.9 451.2 297.4 438.7L137.4 278.7C128.2 269.5 125.5 255.8 130.5 243.8C135.5 231.8 147.1 224 160 224L480 224z" />
+                    </svg>
+                </div>
+                <div class="submenu">
+                    <a href="https://burthgulash.github.io/Chynicky_LARP/Z.Popelu.kalicha/Z.Popelu.kalicha.html" onclick="toggleMenu()">Z Popelu Kalicha</a>
+                </div>
+            </div>
+            <a href="https://burthgulash.github.io/Chynicky_LARP/O%20nas/O%20nás.html" onclick="toggleMenu()">O nás</a>
+            <a href="https://burthgulash.github.io/Chynicky_LARP/pribehy/pribehy.html" onclick="toggleMenu()">Příběhy</a>
+
+            <div class="menu-item-s-submenu">
+                <a href="https://burthgulash.github.io/Chynicky_LARP/Odehrane%20LARPy/Odehrane%20LARPy.html">Odehrané LARPy</a> 
+                <div class="submenu">
+                    <a href="https://burthgulash.github.io/Chynicky_LARP/Odehrane%20LARPy/Navrat-mocneho/Navrat-mocneho.html" onclick="toggleMenu()">Návrat mocného</a>
+                    <a href="https://burthgulash.github.io/Chynicky_LARP/Odehrane%20LARPy/Ozveny%20stinu2/Ozvěny%20stínů%202.html" onclick="toggleMenu()">Ozvěny Stínů 2</a>
+                    <a href="https://burthgulash.github.io/Chynicky_LARP/Odehrane%20LARPy/Ozveny%20stinu/Ozvěny%20stínů.html" onclick="toggleMenu()">Ozvěny stínů</a>
+                    <a href="https://burthgulash.github.io/Chynicky_LARP/Odehrane%20LARPy/Hranicni%20tvrz/Hranicni%20tvrz.html" onclick="toggleMenu()">Hraniční tvrz</a>
+                </div>
+            </div>
+            <button class="darkXlight" id="button-theme-switch">🌗</button>
+        </div>
+    </nav>
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <div class="kalendar-akci">
+        <p class="kalendar-nazev">Kalendář akcí</p>
+        <div class="kalendar-akci2">
+            <!--Návrat mocného-->
+            <div class="ozveny-stinu2-navrat">
+                <div class="ozveny2-popis">
+                    <a href="../Navrat-mocneho/Navrat-mocneho.html">
+                        <button class="ozveny-stinu-tlacitko">JDI DO KALENDAR-DATA.JS</button>
+                    </a>
+                    <div class="datumy">
+                        <div style="margin: 0 0 10px 0;">
+                            <p class="datum-right">Datum :</p>
+                        </div>
+                        <div class="moznost">
+                            <p class="datum-left">14.6.2025 - </p>
+                            <p class="datum-left3">15.6.2025</p>
+                        </div>
+                    </div>
+                    <div class="organizatori">
+                        <p class="organizatori-text">Organizátoři :</p>
+                        <p class="organizatori-text">Kvido Redl</p>
+                        <p class="organizatori-text">Hugo Redl</p>
+                        <p class="organizatori-text">Kristian Páca</p>
+                    </div>
+                </div>
+                <div class="ozveny2-img">
+                    <img style="width: 100%; justify-content: center; margin: 5px 0 5px 0;" src="img/Výstřižek.PNG">
+                </div>
+            </div>
+            <!---->
+            <!---->
+            <div class="ozveny-stinu2-coming-soon">
+                <div class="ozveny2-popis">
+                    <a href="#">
+                        <button class="ozveny-stinu-tlacitko">Z popelu kalicha</button>
+                    </a>
+                    <div class="datumy">
+                        <p class="datum-right">Datum :</p>
+                        <p class="datum-left">5-7.6 2026</p>
+                        <p class="datum-left"></p>
+                    </div>
+                    <div class="organizatori-div">
+                        <p class="organizatori-text">Organizátoři :</p>
+                        <p class="organizatori-text">Kvido Redl</p>
+                        <p class="organizatori-text">Hugo redl</p>
+                        <p class="organizatori-text">Kristian Páca</p>
+                    </div>
+                </div>
+                <div class="ozveny2-img">
+                    <img style=" width: 100%; justify-content: center; margin: 5px 0 5px 0;"
+                        src="img/questionmark2.2.png">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+    <iframe id="theme-sync"
+        src="https://burthgulash.github.io/Chynicky_LARP/light-mod-cloud-web/light-mod-cloud-web.html"
+        style="display:none;"></iframe>
+    <script type="module" src="generace-navody-hlavni.js"></script>
+    <script src="../generace-menu.js"></script>
+    <script src="../obecny.js"></script>
+    <script type="module" src="../scripts/light-modV2.js"></script>
+    <!-- Hidden iframe to store and sync theme -->
+
+    <!--popevers pro org
+    ten class na to je uplne zbytecnej a nema yadnej duvod tam byt ale nachal jsem ho tam jen tak
+    -->
+    <div class="popover" popover id="Hugo Redl">
+        <img class="foto" src="../kvido html-img/foto/O nás-img/20250309_090631.jpg" alt="icon" width="150px">
+        <h2>Hugo</h2>
+        <h3>Štítonoš, berserk. Svou sekerou rozmlátí vše, co se mu postaví do cesty. Na něj rozhodně
+            neútočte,
+            pokud
+            nemáte dostatečnou početní převahu, a i tak si to pořádně rozmyslete. Často, mimo jiné, řeší
+            rozpočet.
+        </h3>
+        <a href="https://burthgulash.github.io/Chynicky_LARP/O%20nas/O%20nás.html">Více info na O nás</a>
+    </div>
+    <div class="popover" popover id="Kvido Redl">
+        <img class="foto" src="../kvido html-img/foto/O nás-img/20250309_081702.jpg" alt="icon" width="150px">
+        <h2>Kvido, Ereth</h2>
+        <h3>Lukostřelec a obstojný šermíř. Střežte se jeho šípům, a hlavně si dávejte pozor na rychlá
+            přepadení
+            ze
+            zálohy. Navíc je tvůrce většiny herních mechanik.
+        </h3>
+        <a href="https://burthgulash.github.io/Chynicky_LARP/O%20nas/O%20nás.html">Více info na O nás</a>
+    </div>
+    <div class="popover" popover id="Kristián Páca">
+        <img class="foto" src="../kvido html-img/foto/O nás-img/20250309_093520.jpg" alt="icon" width="150px">
+        <h2>Kristian, Haakon</h2>
+        <h3>Bard a čaroděj. Pokud s ním budete smlouvat, nikdy nezískáte přívětivou cenu. V boji zvládne
+            přemoct
+            většinu nepřátel. K tomu vytváří spoustu pravidel
+        </h3>
+        <a href="https://burthgulash.github.io/Chynicky_LARP/O%20nas/O%20nás.html">Více info na O nás</a>
+    </div>
+    <div class="popover" popover id="Julie Redlová">
+        <img class="foto" src="../kvido html-img/foto/O nás-img/IMG-20250112-WA0007.jpg" alt="icon" width="150px">
+        <h2>Julie</h2>
+        <h3>Skupina CéPek by bez ní nebyla úplná. Střílí z luku a poradí si i s mečem, štítem někdy i s
+            kopím.
+        </h3>
+        <a href="https://burthgulash.github.io/Chynicky_LARP/O%20nas/O%20nás.html">Více info na O nás</a>
+    </div>
+</body>
+
+</html>
