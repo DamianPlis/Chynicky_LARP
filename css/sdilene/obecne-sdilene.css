@@ -187,3 +187,23 @@ img {
     padding: 1em;
     /* font-size: 7px nevim co zkousis to bz bylo extreme maly*/
 }
+
+.bold {
+    font-weight: bold;
+}
+
+.bold-600 {
+    font-weight: 600;
+}
+
+.bold-500 {
+    font-weight: 500;
+}
+
+.bold-800 {
+    font-weight: 800;
+}
+
+.bold-900 {
+    font-weight: 900;
+}
