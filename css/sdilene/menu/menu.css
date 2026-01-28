@@ -1,4 +1,6 @@
-/* Navigační menu */
+/*! Navigační menu NEMAZAT
+    ja vim ze na ted je to <header class="header">, ale je to dulezity pro weby kde to je po staru
+*/
 nav {
     position: fixed;
     width: 100%;
@@ -9,10 +11,32 @@ nav {
     top: 0;
     left: 0;
     background-image: var(--nav-img);
-
 }
 
 nav svg {
+    width: 1em;
+    height: 1em;
+    fill: white;
+    transition: transform 300ms ease-in-out;
+    transition: background-color 150ms ease-in-out;
+}
+
+/*  */
+
+/* Navigační menu */
+.header {
+    position: fixed;
+    width: 100%;
+    padding: 1rem;
+    /* height: 83px; */
+    z-index: 5;
+    margin-top: 0px;
+    top: 0;
+    left: 0;
+    background-image: var(--nav-img);
+}
+
+.header svg {
     width: 1em;
     height: 1em;
     fill: white;
@@ -61,6 +85,10 @@ nav svg {
     display: flex;
     padding-top: 60px;
     color: black;
+    /* reset stylu pokud z nav selektoru */
+    left: initial;
+    background-image: none;
+    top: initial;
 }
 
 .side-menu-open {
@@ -73,7 +101,7 @@ nav svg {
     align-items: center;
 }
 
-.menu-sipka {
+#menu-sipka {
     --pad: 0.75em;
     display: flex;
     align-items: center;
@@ -90,7 +118,7 @@ nav svg {
     flex: 1;
 }
 
-.menu-item-s-submenu.submenu-open .menu-sipka {
+.menu-item-s-submenu.submenu-open #menu-sipka {
     transform: rotate(0deg);
 }
 
@@ -117,7 +145,7 @@ nav svg {
     transition: opacity 0.15s;
 }
 
-.menu-sipka:hover {
+#menu-sipka:hover {
     transform: rotate(0deg);
     transition: transform 0.3s ease-in-out;
 }
@@ -163,6 +191,6 @@ nav svg {
 
 .side-menu a:hover,
 .darkXlight:hover,
-.menu-sipka:hover {
+#menu-sipka:hover {
     background: darkgray;
 }

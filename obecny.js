@@ -35,7 +35,10 @@ function menuOutsideClick(event) {
 
 // pro nav bar
 function updatePadding() {
-    const nav = document.querySelector("nav");
+    let nav = document.querySelector("header");
+    if (!nav) {
+    nav = document.querySelector("nav");
+    }
     const body = document.querySelector("body"); // Adjust selector for your page content
     body.style.paddingTop = `${nav.offsetHeight}px`;
 }
